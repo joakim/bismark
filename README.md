@@ -7,6 +7,8 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 - Relatively easy to parse
 - Agnostic of output format and hypertext system
 
+(Some features can not be shown with GitHub Flavored Markdown.)
+
 ## Headings
 
 A heading line must start with 1–3 `#` characters and a space.
@@ -50,7 +52,7 @@ There's [no underline](https://practicaltypography.com/underlining.html).
 	==highlighted==
 	~~strike-through~~
 
-> <mark>highlighted</mark>  
+> <u>highlighted</u>  
 > ~~strike-through~~
 
 Styles can span lines within the same paragraph.
@@ -72,7 +74,7 @@ Nested items must be indented at least to the start of the outer item's text.
 
 	1. Ordered item
 	   - Unordered item
-		 - Nested item
+	     - Nested item
 
 > 1. Ordered item
 >    - Unordered item
@@ -86,24 +88,20 @@ Links are enclosed in square brackets `[]`.
 	[https://example.com]
 	[email@example.com]
 	[id]
-	[#foo]
 
 > <https://example.com>  
 > <email@example.com>  
 > [id](id)  
-> [#foo](#foo)
 
 The last part of the (space-delimited) link is its destination. What comes before is the link's text.
 
 	[A website https://example.com]
 	[An email email@example.com]
 	[An identifier id]
-	[A tag #foo]
 
 > [A website](https://example.com)  
 > [An email](mailto:email@example.com)  
 > [An identifier](id)  
-> [A tag](#foo)
 
 
 ## Block quotation
@@ -158,7 +156,7 @@ All other definitions are referenced verbatim, and may be used to construct link
 	<wiki>: http://en.wikipedia.org/wiki/
 	<link>: [Example link https://www.youtube.com/watch?v=ghxpXpTuALM#t=33m24s]
 
-> According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL<sup><small>[1](#fn:1 'In fact, many still pronounce it "sequel".')</a></small></sup>.
+> According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL[^1].
 >
 > [Example link](https://www.youtube.com/watch?v=ghxpXpTuALM#t=33m24s)
 >
@@ -184,3 +182,5 @@ Or with monospace.
 	The asterisk (`*`) and backslash (`\`) are fine symbols indeed.
 
 > The asterisk (`*`) and backslash (`\`) are fine symbols indeed.
+
+[^1]: In fact, many still pronounce it "sequel".
