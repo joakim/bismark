@@ -83,25 +83,25 @@ Nested items must be indented at least to the start of the outer item's text.
 
 ## Links
 
-Links are enclosed in square brackets `[]`.
+Links are enclosed in angle brackets `<>`. (HTML markup is not supported.)
 
-	[https://example.com]
-	[email@example.com]
-	[id]
+	<https://example.com>
+	<email@example.com>
+	<id>
 
 > <https://example.com>  
 > <email@example.com>  
-> [id](id)  
+> [id](id)
 
-The last part of the (space-delimited) link is its destination. What comes before is the link's text.
+The link's text comes before its destination.
 
-	[A website https://example.com]
-	[An email email@example.com]
-	[An identifier id]
+	<A website https://example.com>
+	<An email email@example.com>
+	<An identifier id>
 
 > [A website](https://example.com)  
 > [An email](mailto:email@example.com)  
-> [An identifier](id)  
+> [An identifier](id)
 
 
 ## Block quotation
@@ -118,12 +118,12 @@ The last part of the (space-delimited) link is its destination. What comes befor
 
 Code may be rendered as a formatted monospace block, optionally tagged with a formatter.
 
-	```py
-	print "hello world"
+	```rebol
+	print "Hello, world!"
 	```
 
-> ```py
-> print "hello world"
+> ```rebol
+> print "Hello, world!"
 > ```
 
 
@@ -138,7 +138,7 @@ The line must start with (at least) four dashes.
 
 ## Definitions and references
 
-Definition lines start with a `<` and have the syntax `<id>: value`. Definitions are referenced using `<id>`.
+Definition lines have the syntax `[id]: value`. Definitions are referenced using `[id]`.
 
 Definitions can be used for notes, abbreviations, links and snippets.
 
@@ -147,14 +147,14 @@ For abbreviations, prefix the `id` with a `?`.
 
 All other definitions are referenced verbatim, and may be used to construct links.
 
-	According to [Wikipedia <wiki>/SQL], <?SQL> was originally called SEQUEL<^1>.
+	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL[^1].
 
-	<link>
+	[example]
 	
-	<^1>: In fact, many still pronounce it "sequel".
-	<?SQL>: Structured Query Language
-	<wiki>: http://en.wikipedia.org/wiki/
-	<link>: [Example link https://www.youtube.com/watch?v=ghxpXpTuALM#t=33m24s]
+	[^1]: In fact, many still pronounce it "sequel".
+	[?SQL]: Structured Query Language
+	[wikipedia]: http://en.wikipedia.org/wiki/
+	[example]: <Example link https://www.youtube.com/watch?v=ghxpXpTuALM#t=33m24s>
 
 > According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL[^1].
 >
@@ -165,8 +165,6 @@ All other definitions are referenced verbatim, and may be used to construct link
 > <small><sup>1</sup> In fact, many still pronounce it "sequel".</small>
 
 Whether the definitions themselves are rendered, and how, is up to the renderer.
-
-HTML markup is (obviously) not supported, as renderers may target other formats.
 
 
 ## Escaping
