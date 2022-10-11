@@ -149,16 +149,11 @@ All other definitions are referenced verbatim, and may be used to construct link
 
 	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL[^1].
 
-	[example]
-	
 	[^1]: In fact, many still pronounce it "sequel".
 	[?SQL]: Structured Query Language
 	[wikipedia]: http://en.wikipedia.org/wiki/
-	[example]: <Example link https://www.youtube.com/watch?v=ghxpXpTuALM#t=33m24s>
 
 > According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL[^1].
->
-> [Example link](https://www.youtube.com/watch?v=ghxpXpTuALM#t=33m24s)
 >
 > ---
 >
