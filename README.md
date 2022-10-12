@@ -7,7 +7,7 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 - Relatively easy to parse
 - Agnostic of output format and hypertext system
 
-(Some features can not be shown with GitHub Flavored Markdown.)
+Note: Some examples are not visible in GitHub Flavored Markdown.
 
 ## Headings
 
@@ -52,7 +52,7 @@ There's [no underline](https://practicaltypography.com/underlining.html).
 	==highlighted==
 	~~strike-through~~
 
-> <u>highlighted</u>  
+> <mark>highlighted</mark>  
 > ~~strike-through~~
 
 Styles can span lines within the same paragraph.
@@ -83,7 +83,7 @@ Nested items must be indented at least to the start of the outer item's text.
 
 ## Links
 
-Links are enclosed in angle brackets `<>`. (HTML markup is not supported.)
+Links are enclosed in angle brackets `<…>`.
 
 	<https://example.com>
 	<email@example.com>
@@ -166,14 +166,14 @@ Whether the definitions themselves are rendered, and how, is up to the renderer.
 
 Unintended formatting can be prevented with the escape character `\`.
 
-	The asterisk (\*) and backslash (\\) are fine symbols indeed.
+	The asterisk \* and backslash \\ are fine symbols indeed.
 
-> The asterisk (\*) and backslash (\\) are fine symbols indeed.
+> The asterisk \* and backslash \\ are fine symbols indeed.
 
 Or with monospace.
 
-	The asterisk (`*`) and backslash (`\`) are fine symbols indeed.
+	The asterisk `*` and backslash `\` are fine symbols indeed.
 
-> The asterisk (`*`) and backslash (`\`) are fine symbols indeed.
+> The asterisk `*` and backslash `\` are fine symbols indeed.
 
 [^1]: In fact, many still pronounce it "sequel".
