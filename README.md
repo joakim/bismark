@@ -129,7 +129,7 @@ Code may be rendered as a formatted monospace block, optionally tagged with a fo
 
 ## Thematic break
 
-The line must start with (at least) four dashes.
+The line must start with (at least) four dashes. (`---` is reserved for em-dash, `--` for en-dash.)
 
 	----
 
