@@ -153,8 +153,7 @@ Definition lines have the syntax `[id]: value`. Definitions are referenced using
 Definitions can be used for notes, abbreviations, links and snippets.
 
 For notes, prefix the `id` with a `^`.  
-For abbreviations, prefix the `id` with a `?`.
-
+For abbreviations, prefix the `id` with a `?`.  
 All other definitions are referenced verbatim, and may be used to construct links.
 
 	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
