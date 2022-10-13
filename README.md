@@ -7,7 +7,9 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 - Relatively easy to parse
 - Agnostic of output format and hypertext system
 
-Note: Some examples are not visible in GitHub Flavored Markdown.
+In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
+
+<sub>Note: Some examples are not visible in GitHub Flavored Markdown.</sub>
 
 ## Headings
 
