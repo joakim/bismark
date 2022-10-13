@@ -29,23 +29,18 @@ Some possible extensions that are worth considering.
 Formatters allow alternative rendering of spans or blocks of Bismark text.
 
 	[[spoiler
-	There _is_ no cake.
+	  [[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
 	]]
 
 > <details>
 > <summary>Spoiler</summary>
-> There <em>is</em> no cake.
+>   <img title="A happy little quokka holding a twig" src="https://i.imgur.com/KLsmqqR.jpeg"/>
 > </details>
 
 Formatters are preferable to adding more markup symbols from a very limited set of keyboard characters.
 
 Which formatters are supported depend entirely on the environment.
 
-### Image
-
-	[[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
-
-> ![A happy little quokka holding a twig](https://i.imgur.com/KLsmqqR.jpeg)
 
 ### Table
 
