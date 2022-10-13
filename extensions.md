@@ -53,7 +53,7 @@ Code can be enclosed in curly braces `{…}`, to be evaluated when the text is r
 
 > The answer is… 42.
 
-A language may be specified, similar to monospace blocks.
+A language may be specified, similar to monospaced blocks.
 
 	{js
 	  [1, 2, 3, 4].reduce((acc, n) => acc + n, 0)

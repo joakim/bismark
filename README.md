@@ -43,11 +43,11 @@ Paragraphs are separated by one or more blank lines.
 
 	*bold*
 	_italic_
-	`monospace`
+	`monospaced`
 
 > **bold**  
 > _italic_  
-> `monospace`
+> `monospaced`
 
 There's [no underline](https://practicaltypography.com/underlining.html).
 
@@ -116,7 +116,7 @@ The link's text comes before its destination.
 > — Anonymous
 
 
-## Monospace Blocks
+## Monospaced Blocks
 
 	```
 	(╯°□°）╯︵ ┻━┻
@@ -201,7 +201,7 @@ Unintended formatting can be prevented with the escape character `\`.
 
 > The asterisk \* and backslash \\ are fine symbols indeed.
 
-Or with monospace.
+Or by monospacing.
 
 	The asterisk `*` and backslash `\` are fine symbols indeed.
 
