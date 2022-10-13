@@ -174,6 +174,32 @@ All other definitions are referenced verbatim, and may be used to construct link
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
 
+## Comments
+
+Comments are enclosed with square brackets that start with `--`.
+
+	[-- A comment for future reference ]
+
+	[--
+	This is a block comment.
+	--]
+
+Whether comments are rendered, and how, is up to the renderer.
+
+Uses cases include:
+
+- Notes to self
+- Corrections
+- Placeholders
+- Hiding sections of text from output
+
+It's also a quick way to disable the referencing of a definition.
+
+	This text has no footnote.[--^1]
+
+> This text has no footnote.
+
+
 ## Escaping
 
 Unintended formatting can be prevented with the escape character `\`.

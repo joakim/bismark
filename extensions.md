@@ -87,22 +87,3 @@ A language could be specified, similar to monospace blocks.
 > > 10
 
 Of course, this isn't very portable. But within a specific environment, it could be very powerful. It could be used somewhat similar to [Jupyter Notebook](https://jupyter.org/), with interactive manipulation of code. Or simply compiled in-place when the text is rendered.
-
-
-## Comments
-
-Square brackets that start with `--` may be rendered as comments, either to be hidden from rendered output or to be styled as in-text comments. Either inline or as blocks.
-
-	[-- For future reference... ]
-
-	[--
-	This is a block comment.
-	--]
-
-Some uses cases are todos, corrections, placeholders, temporarily hiding sections of text…
-
-It's also a quick way to (temporarily) disable the referencing of a definition.
-
-	This needs no explanation.[--^1]
-
-> This needs no explanation.
