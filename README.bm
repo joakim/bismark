@@ -26,9 +26,6 @@ Paragraphs are separated by one or more blank lines.
 	Paragraph with
 	a hard line break.
 
-	Paragraph with
-	a hard line break.
-
 
 ## Styles
 
@@ -130,7 +127,6 @@ Hard line breaks within paragraphs can be ignored by escaping the line breaks.
 
 	Paragraph without\
 	a hard line break.
-
 
 
 
