@@ -3,30 +3,9 @@
 Some possible extensions that are worth considering.
 
 
-## Typographic niceties
+## Blocks
 
-	... is an ellipsis
-	-- is an en-dash
-	--- is an em-dash
-	+- is a plus-minus
-
-> … is an ellipsis  
-> – is an en-dash  
-> — is an em-dash  
-> ± is a plus-minus
-
-	^2^ marks superscript text
-	~2~ marks subscript text
-	++foo++ marks inserted text
-
-> <sup>2</sup> marks superscript text  
-> <sub>2</sub> marks subscript text  
-> <ins>foo</ins> marks inserted text
-
-
-## Formatters
-
-Formatters allow alternative rendering of spans or blocks of Bismark text.
+Blocks provide alternative rendering of sections of Bismark text.
 
 	[[spoiler
 	  [[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
@@ -37,12 +16,13 @@ Formatters allow alternative rendering of spans or blocks of Bismark text.
 >   <img title="A happy little quokka holding a twig" src="https://i.imgur.com/KLsmqqR.jpeg"/>
 > </details>
 
-Formatters are preferable to adding more markup symbols from a very limited set of keyboard characters.
+Which renderers are supported depend on the environment. If a renderer is not supported, the block's contents should be rendered as usual.
 
-Which formatters are supported depend entirely on the environment.
-
+Blocks are preferable to reserving more markup symbols from a very limited set of keyboard characters.
 
 ### Table
+
+For example, using Markdown syntax.
 
 	[[table
 	| Bismark    | Markdown                |
@@ -67,13 +47,13 @@ Assuming the environment supports LaTeX.
 
 ## Code
 
-Code can be enclosed in curly braces `{…}` to be evaluated within the text.
+Code can be enclosed in curly braces `{…}`, to be evaluated when the text is rendered.
 
 	The answer is... { 2 * 3 * 7 }.
 
 > The answer is… 42.
 
-A language could be specified, similar to monospace blocks.
+A language may be specified, similar to monospace blocks.
 
 	{js
 	  [1, 2, 3, 4].reduce((acc, n) => acc + n, 0)
@@ -82,3 +62,24 @@ A language could be specified, similar to monospace blocks.
 > > 10
 
 Of course, this isn't very portable. But within a specific environment, it could be very powerful. It could be used somewhat similar to [Jupyter Notebook](https://jupyter.org/), with interactive manipulation and evaluation of code. Or simply compiled in-place when the text is rendered.
+
+
+## Typographic niceties
+
+	... is an ellipsis
+	-- is an en-dash
+	--- is an em-dash
+	+- is a plus-minus
+
+> … is an ellipsis  
+> – is an en-dash  
+> — is an em-dash  
+> ± is a plus-minus
+
+	^2^ marks superscript text
+	~2~ marks subscript text
+	++foo++ marks inserted text
+
+> <sup>2</sup> marks superscript text  
+> <sub>2</sub> marks subscript text  
+> <ins>foo</ins> marks inserted text
