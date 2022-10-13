@@ -7,8 +7,6 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 - Typographically sound
 - Output format agnostic
 
-In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
-
 ---
 
 <sub>Note: Some examples are only visible with Markdown extensions.</sub>
@@ -108,7 +106,7 @@ The link's text comes before its destination.
 > [An identifier](id)
 
 
-## Block quotation
+## Block Quotes
 
 	> Why are you quoting everything I say?
 	— Anonymous
@@ -118,7 +116,7 @@ The link's text comes before its destination.
 > — Anonymous
 
 
-## Monospace block
+## Monospace Blocks
 
 	```
 	(╯°□°）╯︵ ┻━┻
@@ -209,6 +207,10 @@ Or with monospace.
 	The asterisk `*` and backslash `\` are fine symbols indeed.
 
 > The asterisk `*` and backslash `\` are fine symbols indeed.
+
+---
+
+In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
 
 
 

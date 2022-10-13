@@ -7,8 +7,6 @@ A <lightweight markup language https://en.wikipedia.org/wiki/Lightweight_markup_
 - Typographically sound
 - Output format agnostic
 
-In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
-
 ----
 
 ## Headings
@@ -76,13 +74,13 @@ The link's text comes before its destination.
 	<An identifier id>
 
 
-## Block quotation
+## Block Quotes
 
 	> Why are you quoting everything I say?
 	— Anonymous
 
 
-## Monospace block
+## Monospace Blocks
 
 	```
 	┬─┬ノ( º _ ºノ)
@@ -155,6 +153,10 @@ Hard line breaks within paragraphs can be ignored by escaping the line breaks.
 
 	Paragraph without\
 	a hard line break.
+
+----
+
+In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
 
 
 
