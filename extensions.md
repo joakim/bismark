@@ -5,19 +5,19 @@ Some possible extensions that are worth considering.
 
 ## Typographic niceties
 
-    ... is an ellipsis
-    -- is an en-dash
-    --- is an em-dash
-    +- is a plus-minus
+	... is an ellipsis
+	-- is an en-dash
+	--- is an em-dash
+	+- is a plus-minus
 
 > … is an ellipsis  
 > – is an en-dash  
 > — is an em-dash  
 > ± is a plus-minus
 
-    ^2^ marks superscript text
-    ~2~ marks subscript text
-    ++foo++ marks inserted text
+	^2^ marks superscript text
+	~2~ marks subscript text
+	++foo++ marks inserted text
 
 > <sup>2</sup> marks superscript text  
 > <sub>2</sub> marks subscript text  
@@ -28,9 +28,9 @@ Some possible extensions that are worth considering.
 
 Formatters allow alternative rendering of spans or blocks of Bismark text.
 
-    [[spoiler
-    There _is_ no cake.
-    ]]
+	[[spoiler
+	There _is_ no cake.
+	]]
 
 > <details>
 > <summary>Spoiler</summary>
@@ -43,46 +43,46 @@ Which formatters are supported depend entirely on the environment.
 
 ### Image
 
-    [[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
+	[[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
 
 > ![A happy little quokka holding a twig](https://i.imgur.com/KLsmqqR.jpeg)
 
 ### Table
 
-    [[table
-    | Syntax      | Description |
-    | ----------- | ----------- |
-    | Header      | Title       |
-    | Paragraph   | Text        |
-    ]]
+	[[table
+	| Bismark    | Markdown                |
+	| ---------- | ----------------------- |
+	| `*bold*`   | `**bold**` / `__bold__` |
+	| `_italic_` | `*italic*` / `_italic_` |
+	]]
 
-> | Syntax      | Description |
-> | ----------- | ----------- |
-> | Header      | Title       |
-> | Paragraph   | Text        |
+> | Bismark    | Markdown                |
+> | ---------- | ----------------------- |
+> | `*bold*`   | `**bold**` / `__bold__` |
+> | `_italic_` | `*italic*` / `_italic_` |
 
 ### Math formula
 
 Assuming the environment supports LaTeX.
 
-    [[latex
-    \dfrac{\partial y}{\partial x} = x
-    ]]
+	[[latex
+	\dfrac{\partial y}{\partial x} = x
+	]]
 
 
 ## Code
 
 Code can be enclosed in curly braces `{…}` to be run within the text.
 
-    The answer is... { 2 * 3 * 7 }.
+	The answer is... { 2 * 3 * 7 }.
 
 > The answer is… 42.
 
 A language could be specified, similar to monospace blocks.
 
-    {js
-      [1, 2, 3, 4].reduce((acc, n) => acc + n, 0)
-    }
+	{js
+	  [1, 2, 3, 4].reduce((acc, n) => acc + n, 0)
+	}
 
 > > 10
 
@@ -93,18 +93,16 @@ Of course, this isn't very portable. But within a specific environment, it could
 
 Square brackets that start with `--` may be rendered as comments, either to be hidden from rendered output or to be styled as in-text comments. Either inline or as blocks.
 
-    [-- For future reference... ]
-    
-    [--
-        This is a block comment.
-    --]
+	[-- For future reference... ]
 
->  
+	[--
+	This is a block comment.
+	--]
 
 Some uses cases are todos, corrections, placeholders, temporarily hiding sections of text…
 
 It's also a quick way to (temporarily) disable the referencing of a definition.
 
-    This needs no explanation.[--^1]
+	This needs no explanation.[--^1]
 
 > This needs no explanation.

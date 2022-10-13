@@ -3,13 +3,15 @@
 A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language), suitable for both shorter and longer texts.
 
 - Simple and easy to learn
-- Typographically sound
 - Relatively easy to parse
-- Agnostic of output format and hypertext system
+- Typographically sound
+- Output format agnostic
 
 In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
 
 <sub>Note: Some examples are not visible in GitHub Flavored Markdown.</sub>
+
+---
 
 ## Headings
 
@@ -72,11 +74,11 @@ Styles can span lines within the same paragraph.
 
 Either ordered or unordered.
 
-Nested items must be indented at least to the start of the outer item's text.
+Nested items must be indented, either with tabs or with spaces (at least to the start of the outer item's text).
 
 	1. Ordered item
-	   - Unordered item
-	     - Nested item
+		- Unordered item
+			- Nested item
 
 > 1. Ordered item
 >    - Unordered item
@@ -157,13 +159,13 @@ For abbreviations, prefix the `id` with a `?`.
 
 All other definitions are referenced verbatim, and may be used to construct links.
 
-	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL[^1].
+	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
 	[^1]: In fact, many still pronounce it "sequel".
 	[?SQL]: Structured Query Language
 	[wikipedia]: http://en.wikipedia.org/wiki/
 
-> According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL[^1].
+> According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
 >
 > ---
 >
@@ -185,5 +187,7 @@ Or with monospace.
 	The asterisk `*` and backslash `\` are fine symbols indeed.
 
 > The asterisk `*` and backslash `\` are fine symbols indeed.
+
+
 
 [^1]: In fact, many still pronounce it "sequel".

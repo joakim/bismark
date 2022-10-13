@@ -1,10 +1,13 @@
 A <lightweight markup language https://en.wikipedia.org/wiki/Lightweight_markup_language>, suitable for both shorter and longer texts.
 
 - Simple and easy to learn
-- Typographically sound
 - Relatively easy to parse
-- Agnostic of output format and hypertext system
+- Typographically sound
+- Output format agnostic
 
+In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
+
+----
 
 ## Headings
 
@@ -49,11 +52,11 @@ Styles can span lines within the same paragraph.
 
 Either ordered or unordered.
 
-Nested items must be indented at least to the start of the outer item's text.
+Nested items must be indented, either with tabs or with spaces (at least to the start of the outer item's text).
 
 	1. Ordered item
-	   - Unordered item
-	     - Nested item
+		- Unordered item
+			- Nested item
 
 
 ## Links
@@ -108,7 +111,7 @@ For abbreviations, prefix the `id` with a `?`.
 
 All other definitions are referenced verbatim, and may be used to construct links.
 
-	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL[^1].
+	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
