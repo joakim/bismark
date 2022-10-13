@@ -116,7 +116,15 @@ The link's text comes before its destination.
 
 ## Monospace block
 
-Code may be rendered as a formatted monospace block, optionally tagged with a formatter.
+	```
+	(╯°□°）╯︵ ┻━┻
+	```
+
+> ```
+> ┬─┬ノ( º _ ºノ)
+> ```
+
+The text may be syntax highlighted by specifying a language.
 
 	```rebol
 	print "Hello, world!"
