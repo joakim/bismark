@@ -72,7 +72,7 @@ Assuming the environment supports LaTeX.
 
 ## Code
 
-Code can be enclosed in curly braces `{…}` to be run within the text.
+Code can be enclosed in curly braces `{…}` to be evaluated within the text.
 
 	The answer is... { 2 * 3 * 7 }.
 
@@ -86,4 +86,4 @@ A language could be specified, similar to monospace blocks.
 
 > > 10
 
-Of course, this isn't very portable. But within a specific environment, it could be very powerful. It could be used somewhat similar to [Jupyter Notebook](https://jupyter.org/), with interactive manipulation of code. Or simply compiled in-place when the text is rendered.
+Of course, this isn't very portable. But within a specific environment, it could be very powerful. It could be used somewhat similar to [Jupyter Notebook](https://jupyter.org/), with interactive manipulation and evaluation of code. Or simply compiled in-place when the text is rendered.
