@@ -9,9 +9,9 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 
 In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
 
-<sub>Note: Some examples are not visible in GitHub Flavored Markdown.</sub>
-
 ---
+
+<sub>Note: Some examples are only visible with Markdown extensions.</sub>
 
 ## Headings
 
@@ -166,10 +166,6 @@ All other definitions are referenced verbatim, and may be used to construct link
 	[wikipedia]: http://en.wikipedia.org/wiki/
 
 > According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
->
-> ---
->
-> <small><sup>1</sup> In fact, many still pronounce it "sequel".</small>
 
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
