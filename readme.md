@@ -148,7 +148,7 @@ The line must start with (at least) four dashes. (`---` is reserved for em-dash,
 
 ## Definitions and references
 
-Definition lines have the syntax `[id]: value`. Definitions are referenced using `[id]`.
+Definition have the syntax `[id]: value`. Definitions are referenced using `[id]`.
 
 Definitions can be used for notes, abbreviations, links and snippets.
 
@@ -169,13 +169,13 @@ Whether the definitions themselves are rendered, and how, is up to the renderer.
 
 ## Comments
 
-Comments are enclosed with square brackets that start with `--`.
+Comments are enclosed in square brackets that start with a `-`.
 
-	[-- A comment for future reference ]
+	[- A comment for future reference -]
 
-	[--
-	This is a block comment.
-	--]
+	[-
+	This is a _block comment_.
+	-]
 
 Whether comments are rendered, and how, is up to the renderer.
 
@@ -184,11 +184,11 @@ Uses cases include:
 - Notes to self
 - Corrections
 - Placeholders
-- Hiding sections of text from output
+- Hiding text from output
 
 It's also a quick way to disable the referencing of a definition.
 
-	This text has no footnote.[--^1]
+	This text has no footnote.[-^1]
 
 > This text has no footnote.
 
