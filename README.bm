@@ -111,7 +111,7 @@ For abbreviations, prefix the `id` with a `?`.
 
 All other definitions are referenced verbatim, and may be used to construct links.
 
-	According to <Wikipedia>, [?SQL] was originally called SEQUEL[^1].
+	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL[^1].
 
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
