@@ -38,9 +38,6 @@ Paragraphs are separated by one or more blank lines.
 
 There's <no underline https://practicaltypography.com/underlining.html>.
 
-	==highlighted==
-	~~strike-through~~
-
 Styles can span lines within the same paragraph.
 
 	The most dangerous thought you can have
@@ -104,11 +101,11 @@ The line must start with (at least) four dashes. (`---` is reserved for em-dash,
 
 Definitions have the syntax `[id]: value`. Definitions are referenced using `[id]`.
 
-Definitions can be used for notes, abbreviations, links and snippets.
+Definitions can be used for notes, abbreviations, snippets and links.
 
 For notes, prefix the `id` with a `^`.  
 For abbreviations, prefix the `id` with a `?`.
-All other definitions are referenced verbatim, and may be used to construct links.
+All other definitions are snippets, and may be used to construct links.
 
 	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
@@ -125,17 +122,13 @@ Comments are enclosed in square brackets that start with a `-`.
 	This is a _block comment_.
 	-]
 
-Whether comments are rendered, and how, is up to the renderer.
-
 Uses cases include:
 - Notes to self
-- Corrections
 - Placeholders
+- Corrections
 - Hiding text from output
 
-It's also a quick way to disable the referencing of a definition.
-
-	This text has no footnote.[-^1]
+Whether comments are rendered, and how, is up to the renderer.
 
 
 ## Escaping

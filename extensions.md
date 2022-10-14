@@ -38,9 +38,9 @@ For example, using Markdown syntax.
 
 ### Math formula
 
-Assuming the environment supports LaTeX.
+Assuming the environment supports TeX.
 
-	[[latex
+	[[tex
 	\dfrac{\partial y}{\partial x} = x
 	]]
 
@@ -66,6 +66,18 @@ Of course, this isn't very portable. But within a specific environment, it could
 
 ## Typographic niceties
 
+	==highlighted==
+	~~redacted~~
+	++inserted++
+	^superscript^
+	~subscript~
+
+> <mark>highlighted</mark>  
+> <del>redacted</del>  
+> <ins>inserted</ins>  
+> <sup>superscript</sup>  
+> <sub>subscript</sub>
+
 	... is an ellipsis
 	-- is an en-dash
 	--- is an em-dash
@@ -75,11 +87,3 @@ Of course, this isn't very portable. But within a specific environment, it could
 > – is an en-dash  
 > — is an em-dash  
 > ± is a plus-minus
-
-	^2^ marks superscript text
-	~2~ marks subscript text
-	++foo++ marks inserted text
-
-> <sup>2</sup> marks superscript text  
-> <sub>2</sub> marks subscript text  
-> <ins>foo</ins> marks inserted text
