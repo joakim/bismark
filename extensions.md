@@ -16,7 +16,9 @@ Blocks provide alternative rendering of sections of Bismark text.
 >   <img title="A happy little quokka holding a twig" src="https://i.imgur.com/KLsmqqR.jpeg"/>
 > </details>
 
-Which renderers are supported depend on the environment. If a renderer is not supported, the block's contents should be rendered as usual.
+Which renderers are supported depend on the environment.
+
+If a renderer is not supported, the block's contents should be rendered as usual.
 
 Blocks are preferable to reserving more markup symbols from a very limited set of keyboard characters.
 
