@@ -44,6 +44,11 @@ Assuming the environment supports TeX.
 	\dfrac{\partial y}{\partial x} = x
 	]]
 
+### Markdown inside Bismark
+
+	Because [[md *why not!* ]]
+
+> Because *why not!*
 
 ## Code
 
