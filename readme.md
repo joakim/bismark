@@ -197,7 +197,7 @@ Or by monospacing.
 
 ---
 
-In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM).
+In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM) ([atx](http://www.aaronsw.com/2002/atx/intro)).
 
 
 
