@@ -6,6 +6,7 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 - Relatively easy to parse
 - Typographically sound
 - Output format agnostic
+- [Extensible](/extras.md)
 
 ---
 
