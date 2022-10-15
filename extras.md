@@ -1,11 +1,35 @@
-# Extensions
+# Extras
 
-Some possible extensions that are worth considering.
+A Bismark editor _should_ show which extra features it supports.
+
+For example:
+
+> **Basic Bismark**  
+> \+ Styling: Highlight  
+> \+ Extensions: Image, Table, Math  
+> \+ Code: JavaScript, Python
 
 
-## Blocks
+## Extra styling
 
-Blocks allow a different rendering of pieces of Bismark text.
+	==highlighted==
+	~~redacted~~
+	++inserted++
+	^superscript^
+	~subscript~
+
+> <mark>highlighted</mark>  
+> <del>redacted</del>  
+> <ins>inserted</ins>  
+> <sup>superscript</sup>  
+> <sub>subscript</sub>
+
+
+## Extensions
+
+Bismark renderers can be extended by sub-renderers to provide additonal features.
+
+Enclosing a section of text in double square brackets `[[…]]`, tagged with the name of an extension, will cause it to be rendered by that extension.
 
 	[[spoiler
 	  [[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
@@ -18,9 +42,7 @@ Blocks allow a different rendering of pieces of Bismark text.
 
 Which renderers are supported depend on the environment.
 
-If a renderer is not supported, the block's contents should be rendered as usual.
-
-Blocks are preferable to reserving more markup symbols from a very limited set of keyboard characters.
+If a renderer is not supported, the contents should be rendered as usual. (Note how the image will fall back to a link in the example above.)
 
 ### Table
 
@@ -52,9 +74,10 @@ Assuming the environment supports TeX.
 
 > Because *why not!*
 
+
 ## Code
 
-Code that's enclosed in curly braces `{…}` gets evaluated when the text is rendered.
+Code enclosed in curly braces `{…}` will get evaluated when rendered.
 
 	The answer is... { 2 * 3 * 7 }!
 
@@ -69,30 +92,3 @@ A language may be specified, similar to monospaced code blocks.
 > 10
 
 Of course, this isn't very portable. But within a certain environment, it could be very powerful. It could be used to create something like [Jupyter Notebook](https://jupyter.org/), with interactive manipulation and evaluation of code. Or simply have it compile in-place when the text is rendered.
-
-
-## Typographic niceties
-
-Because [typography matters](https://practicaltypography.com/).
-
-	==highlighted==
-	~~redacted~~
-	++inserted++
-	^superscript^
-	~subscript~
-
-> <mark>highlighted</mark>  
-> <del>redacted</del>  
-> <ins>inserted</ins>  
-> <sup>superscript</sup>  
-> <sub>subscript</sub>
-
-	... is an ellipsis
-	-- is an en-dash
-	--- is an em-dash
-	+- is a plus-minus
-
-> … is an ellipsis  
-> – is an en-dash  
-> — is an em-dash  
-> ± is a plus-minus

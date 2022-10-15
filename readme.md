@@ -39,7 +39,7 @@ Paragraphs are separated by one or more blank lines.
 > a hard line break.
 
 
-## Styles
+## Styling
 
 	*bold*
 	_italic_
@@ -83,21 +83,17 @@ Links are enclosed in angle brackets `<…>`.
 
 	<https://example.com>
 	<email@example.com>
-	<id>
 
 > <https://example.com>  
 > <email@example.com>  
-> [id](id)
 
 The link's text comes before its destination.
 
 	<A website https://example.com>
 	<An email email@example.com>
-	<An identifier id>
 
 > [A website](https://example.com)  
 > [An email](mailto:email@example.com)  
-> [An identifier](id)
 
 
 ## Block Quotes
@@ -142,9 +138,9 @@ The line must start with (at least) four dashes. (`---` is reserved for em-dash,
 
 ## Definitions and references
 
-Definitions have the syntax `[id]: value`. Definitions are referenced using `[id]`.
+Definitions have the syntax `[id]: value` and are referenced using `[id]`.
 
-Definitions can be used for notes, abbreviations, snippets and links.
+Definitions can be used for notes, abbreviations and snippets.
 
 For notes, prefix the `id` with a `^`.  
 For abbreviations, prefix the `id` with a `?`.  
@@ -168,7 +164,7 @@ Comments are enclosed in square brackets that start with a `-`.
 	[- A comment for future reference -]
 
 	[-
-	This is a _block comment_.
+	This is a _block_ comment.
 	-]
 
 Uses cases include:
@@ -176,9 +172,26 @@ Uses cases include:
 - Notes to self
 - Placeholders
 - Corrections
-- Hiding text from output
+- Exclude from output
 
 Whether comments are rendered, and how, is up to the renderer.
+
+
+## Typographic niceties
+
+Because [typography matters](https://practicaltypography.com/).
+
+	... is an ellipsis
+	-- is an en-dash
+	--- is an em-dash
+	+- is a plus-minus
+
+> … is an ellipsis  
+> – is an en-dash  
+> — is an em-dash  
+> ± is a plus-minus
+
+“Smart quotes” may be provided as an option by the renderer.
 
 
 ## Escaping
