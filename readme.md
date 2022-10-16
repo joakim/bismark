@@ -175,7 +175,7 @@ Uses cases include:
 - Notes to self
 - Placeholders
 - Corrections
-- Exclude from output
+- Exclusion from output
 
 Whether comments are rendered, and how, is up to the renderer.
 
