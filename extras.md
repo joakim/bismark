@@ -5,12 +5,17 @@ A Bismark editor should show which extra features it supports.
 For example:
 
 > **[Basic Bismark](/readme.md)**  
-> \+ [Styling](#extra-styling): Highlight  
+> \+ [Styling](#styling): Highlight  
 > \+ [Extensions](#extensions): Image, Table, Math  
 > \+ [Code](#code): JavaScript, Python
 
 
-## Extra styling
+## Documentation
+
+<sub>Note: Some examples are only visible with Markdown extensions.</sub>
+
+
+### Styling
 
 	==highlighted==
 	~~redacted~~
@@ -25,11 +30,13 @@ For example:
 > <sub>subscript</sub>
 
 
-## Extensions
+### Extensions
 
 Bismark renderers can be extended by sub-renderers to provide additonal features.
 
-Enclosing a section of text in double square brackets `[[…]]`, tagged with the name of an extension, will cause it to be rendered by that extension.
+Enclosing a section of text in double square brackets `[[…]]` tagged with the name of an extension, will cause it to be rendered by that extension.
+
+Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. (Note how the image will fall back to a link in the first example.)
 
 	[[spoiler
 	  [[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
@@ -40,13 +47,9 @@ Enclosing a section of text in double square brackets `[[…]]`, tagged with the
 >   <img title="A happy little quokka holding a twig" src="https://i.imgur.com/KLsmqqR.jpeg"/>
 > </details>
 
-Which renderers are supported depend on the environment.
+Here are some more examples…
 
-If a renderer is not supported, the contents should be rendered as usual. (Note how the image will fall back to a link in the example above.)
-
-### Table
-
-Using Markdown's table syntax as an example.
+Tables, using Markdown's syntax:
 
 	[[table
 	| Bismark    | Markdown                |
@@ -60,22 +63,20 @@ Using Markdown's table syntax as an example.
 > | `*bold*`   | `**bold**` / `__bold__` |
 > | `_italic_` | `*italic*` / `_italic_` |
 
-### Math formula
-
-Assuming the environment supports TeX.
+Math formulas, assuming the environment supports TeX:
 
 	[[tex
 	\dfrac{\partial y}{\partial x} = x
 	]]
 
-### Markdown inside Bismark
+Markdown inside Bismark:
 
 	Because [[md *why not!* ]]
 
 > Because *why not!*
 
 
-## Code
+### Code
 
 Code enclosed in curly braces `{…}` will get evaluated when rendered.
 
