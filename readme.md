@@ -2,17 +2,19 @@
 
 A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language), suitable for both shorter and longer texts.
 
-- Simple and easy to learn
-- Relatively easy to parse
+- Simple, easy to learn
 - Typographically sound
 - Output format agnostic
+- Relatively easy to parse
 - [Extensible](/extras.md)
 
----
+
+## Documentation
 
 <sub>Note: Some examples are only visible with Markdown extensions.</sub>
 
-## Headings
+
+### Headings
 
 A heading line must start with 1–3 `#` characters and a space.
 
@@ -27,7 +29,7 @@ A heading line must start with 1–3 `#` characters and a space.
 There are [no more levels](https://practicaltypography.com/headings.html).
 
 
-## Paragraphs
+### Paragraphs
 
 Paragraphs are separated by one or more blank lines.
 
@@ -40,7 +42,7 @@ Paragraphs are separated by one or more blank lines.
 > a hard line break.
 
 
-## Styling
+### Styling
 
 	*bold*
 	_italic_
@@ -63,7 +65,7 @@ Styles can span lines within the same paragraph.
 > what you're doing**.
 
 
-## Lists
+### Lists
 
 Either ordered or unordered.
 
@@ -78,7 +80,7 @@ Nested items must be indented, either with tabs or with spaces (at least to the 
 >      - Nested item
 
 
-## Links
+### Links
 
 Links are enclosed in angle brackets `<…>`.
 
@@ -97,7 +99,7 @@ The link's text comes before its destination.
 > [An email](mailto:email@example.com)  
 
 
-## Block Quotes
+### Block Quotes
 
 	> Why are you quoting everything I say?
 	— Anonymous
@@ -107,7 +109,7 @@ The link's text comes before its destination.
 > — Anonymous
 
 
-## Monospaced Blocks
+### Monospaced Blocks
 
 	```
 	(╯°□°）╯︵ ┻━┻
@@ -128,7 +130,7 @@ The text may be syntax highlighted by specifying a language.
 > ```
 
 
-## Thematic Break
+### Thematic Break
 
 The line must start with (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
 
@@ -137,7 +139,7 @@ The line must start with (at least) four dashes. `---` is reserved for em-dash, 
 > ---
 
 
-## Definitions and References
+### Definitions and References
 
 Definitions have the syntax `[id]: value` and are referenced using `[id]`.
 
@@ -158,7 +160,7 @@ All other definitions are snippets, and may be used to construct links.
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
 
-## Comments
+### Comments
 
 Comments are enclosed in square brackets that start with a `-`.
 
@@ -178,7 +180,7 @@ Uses cases include:
 Whether comments are rendered, and how, is up to the renderer.
 
 
-## Beautification
+### Beautification
 
 Because [typography matters](https://practicaltypography.com/).
 
@@ -195,7 +197,7 @@ Because [typography matters](https://practicaltypography.com/).
 “Smart quotes” may be provided as an option by the renderer.
 
 
-## Escaping
+### Escaping
 
 Unintended formatting can be prevented with the escape character `\`.
 
