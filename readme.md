@@ -128,16 +128,16 @@ The text may be syntax highlighted by specifying a language.
 > ```
 
 
-## Thematic break
+## Thematic Break
 
-The line must start with (at least) four dashes. (`---` is reserved for em-dash, `--` for en-dash.)
+The line must start with (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
 
 	----
 
 > ---
 
 
-## Definitions and references
+## Definitions and References
 
 Definitions have the syntax `[id]: value` and are referenced using `[id]`.
 
@@ -178,7 +178,7 @@ Uses cases include:
 Whether comments are rendered, and how, is up to the renderer.
 
 
-## Typographic niceties
+## Beautification
 
 Because [typography matters](https://practicaltypography.com/).
 
