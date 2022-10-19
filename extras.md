@@ -65,9 +65,7 @@ Tables, using Markdown's syntax:
 
 Math formulas, assuming the environment supports TeX:
 
-	[[tex
-	\dfrac{\partial y}{\partial x} = x
-	]]
+	[[tex \dfrac{\partial y}{\partial x} = x ]]
 
 Markdown inside Bismark:
 
