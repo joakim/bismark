@@ -1,11 +1,11 @@
 # Extras
 
-A Bismark editor should show which extra features it supports.
+A Bismark editor should show which extra features it supports. Either with its toolbar or in a popover.
 
 For example:
 
 > **[Basic Bismark](/readme.md)**  
-> \+ [Styling](#styling): Highlight  
+> \+ [Styling](#styling): Highlight, Superscript, Subscript  
 > \+ [Extensions](#extensions): Image, Table, Math  
 > \+ [Code](#code): JavaScript, Python
 
