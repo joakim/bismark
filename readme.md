@@ -71,7 +71,7 @@ Styles can span lines within the same paragraph.
 
 Either ordered or unordered.
 
-Nested items must be indented, either with with spaces (at least to the start of the outer item's text) or with tabs (one for each indentation).
+Nested items must be indented, either with spaces (at least to the start of the outer item's text) or with tabs (one for each indentation).
 
 	1. Ordered item
 		- Unordered item
@@ -161,9 +161,9 @@ All other definitions are snippets, and may be used to construct links.
 
 > According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
 
-`id` must conform to [the Unicode® Standard Annex #31 for Unicode Version 15.0.0](https://unicode.org/reports/tr31/#D1) (UAX31-C1), observing (UAX31-C2) UAX31-R1-1, using definition UAX31-D1 and guaranteeing stable identifiers across versions of the Unicode Standard (UAX31-R1b). Whether it should conform to UAX31-R5 (Equivalent Case-Insensitive Identifiers) is undecided.
-
 Whether the definitions themselves are rendered, and how, is up to the renderer.
+
+`id`s are case insensitive and can contain whitespace, but not `[` or `]`.
 
 
 ### Comments
