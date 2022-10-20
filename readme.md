@@ -206,8 +206,8 @@ Because [typography matters](https://practicaltypography.com/).
 > → is a rightwards arrow  
 > ← is a leftwards arrow  
 > ⟶ is a long rightwards arrow  
-> ⟵ is a long leftwards arrow
-> ± is a plus-minus  
+> ⟵ is a long leftwards arrow  
+> ± is a plus-minus
 
 “Smart quotes” may be provided as an option by the renderer.
 
