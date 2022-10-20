@@ -85,9 +85,24 @@ Code enclosed in curly braces `{…}` will get evaluated when rendered.
 A language may be specified, similar to monospaced code blocks.
 
 	{js
-	  [1, 2, 3, 4].reduce((acc, n) => acc + n, 0)
+	  [1, 2, 3, 4].reduce((acc, num) => acc + num, 0)
 	}
 
 > 10
 
-Of course, this isn't very portable. But within a certain environment, it could be very powerful. It could be used to create something like [Jupyter Notebook](https://jupyter.org/), with interactive manipulation and evaluation of code. Or simply have it compile in-place when the text is rendered.
+Of course, this isn't very portable. But within a certain environment, it could be very powerful.
+
+For example, it could be used to create something like [Jupyter Notebook](https://jupyter.org/), with interactive manipulation and evaluation of code. Perhaps with double curly braces `{{…}}`, producing both an in-place editor of the code (or a monospaced block) _and_ the evaluated result below.
+
+	{{kesh
+	    a: 20
+	    b: 22
+	    a + b
+	}}
+
+> ```
+> a: 20
+> b: 22
+> a + b
+> ```
+> > 42
