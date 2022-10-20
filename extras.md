@@ -17,6 +17,8 @@ For example:
 
 ### Styling
 
+The basic styles (bold, italic and monospaced) may be extended with additional styles from a predetermined set.
+
 	==highlighted==
 	~~redacted~~
 	++inserted++
