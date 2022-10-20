@@ -165,6 +165,13 @@ Or by monospacing.
 
 	The asterisk `*` and backslash `\` are fine symbols indeed.
 
+Even line breaks can be escaped.
+
+	This line has a hard line break \
+	that is not rendered.
+
+> This line has a hard line break that is not rendered.
+
 ----
 
 In memory of <Aaron Swartz https://www.youtube.com/watch?v=gpvcc9C8SbM> (<atx http://www.aaronsw.com/2002/atx/intro>).
