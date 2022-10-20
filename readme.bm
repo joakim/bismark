@@ -113,6 +113,8 @@ All other definitions are snippets, and may be used to construct links.
 
 	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
+`id` must conform to <the Unicode® Standard Annex #31 for Unicode Version 15.0.0 https://unicode.org/reports/tr31/#D1> (UAX31-C1), observing (UAX31-C2) UAX31-R1-1, using definition UAX31-D1 and guaranteeing stable identifiers across versions of the Unicode Standard (UAX31-R1b). Whether it should conform to UAX31-R5 (Equivalent Case-Insensitive Identifiers) is undecided.
+
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
 
