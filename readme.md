@@ -175,6 +175,17 @@ Uses cases include:
 Whether comments are rendered, and how, is up to the renderer.
 
 
+### Thematic Break
+
+The line must consist of (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
+
+	----
+
+> ---
+
+Block quotes may contain thematic breaks.
+
+
 ### Beautification
 
 Because [typography matters](https://practicaltypography.com/).
@@ -190,17 +201,6 @@ Because [typography matters](https://practicaltypography.com/).
 > ± is a plus-minus
 
 “Smart quotes” may be provided as an option by the renderer.
-
-
-### Thematic Break
-
-The line must consist of (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
-
-	----
-
-> ---
-
-Block quotes may contain thematic breaks.
 
 
 ### Escaping
