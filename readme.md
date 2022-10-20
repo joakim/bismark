@@ -2,14 +2,13 @@
 
 A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language), suitable for both shorter and longer texts.
 
-- Simple, easy to learn
+- Simple
+- [Extensible](extras.md)
 - Typographically sound
-- Output format agnostic
-- Relatively easy to parse
-- [Extensible](/extras.md)
 
-Note that Bismark is still in flux and is subject to change.  
-The issue queue is open for questions, ideas and criticism.
+It is output format agnostic, and should be relatively easy to parse.
+
+Note that Bismark is still in flux and is subject to change. The issue queue is open for questions, ideas and criticism.
 
 
 ## Documentation
