@@ -132,17 +132,6 @@ The text may be syntax highlighted by specifying a language.
 > ```
 
 
-### Thematic Break
-
-The line must consist of (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
-
-	----
-
-> ---
-
-Block quotes may contain thematic breaks.
-
-
 ### Definitions and References
 
 Definitions have the syntax `[id]: value` and are referenced using `[id]`.
@@ -201,6 +190,17 @@ Because [typography matters](https://practicaltypography.com/).
 > ± is a plus-minus
 
 “Smart quotes” may be provided as an option by the renderer.
+
+
+### Thematic Break
+
+The line must consist of (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
+
+	----
+
+> ---
+
+Block quotes may contain thematic breaks.
 
 
 ### Escaping
