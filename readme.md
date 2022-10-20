@@ -8,10 +8,13 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 - Relatively easy to parse
 - [Extensible](/extras.md)
 
+Note that Bismark is still in flux and is subject to change.  
+The issue queue is open for questions, ideas and criticism.
+
 
 ## Documentation
 
-<sub>Note: Some examples are only visible with Markdown extensions.</sub>
+<sub>Some examples are only visible with Markdown extensions.</sub>
 
 
 ### Headings

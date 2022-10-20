@@ -12,7 +12,7 @@ For example:
 
 ## Documentation
 
-<sub>Note: Some examples are only visible with Markdown extensions.</sub>
+<sub>Some examples are only visible with Markdown extensions.</sub>
 
 
 ### Styling
