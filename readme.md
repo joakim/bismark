@@ -94,11 +94,11 @@ Links are enclosed in angle brackets `<…>`.
 
 The link's text comes before its destination.
 
-	<A website https://example.com>
-	<An email email@example.com>
+	<Website https://example.com>
+	<Email email@example.com>
 
-> [A website](https://example.com)  
-> [An email](mailto:email@example.com)  
+> [Website](https://example.com)  
+> [Email](mailto:email@example.com)  
 
 
 ### Block Quotes
