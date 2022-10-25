@@ -84,7 +84,7 @@ Code enclosed in curly braces `{…}` will get evaluated when rendered.
 
 > The answer is… 42!
 
-A language may be specified, similar to monospaced code blocks.
+A language may be specified, similar to extensions and monospaced code blocks.
 
 	{js
 	  [1, 2, 3, 4].reduce((acc, num) => acc + num, 0)
