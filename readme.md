@@ -95,10 +95,12 @@ Links are enclosed in angle brackets `<…>`.
 The link's text comes before its destination.
 
 	<Website https://example.com>
-	<Email email@example.com>
+	<Email address email@example.com>
 
 > [Website](https://example.com)  
-> [Email](mailto:email@example.com)  
+> [Email address](mailto:email@example.com)  
+
+The destination is always the last part of the whitespace delimited link.
 
 
 ### Block Quotes
