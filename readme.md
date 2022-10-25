@@ -116,11 +116,11 @@ The destination is always the last part of the whitespace delimited link.
 ### Monospaced Blocks
 
 	```
-	(╯°□°）╯︵ ┻━┻
+	¯\_(ツ)_/¯
 	```
 
 > ```
-> ┬─┬ノ( º _ ºノ)
+> ¯\_(ツ)_/¯
 > ```
 
 The text may be syntax highlighted by specifying a language.
