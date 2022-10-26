@@ -6,9 +6,9 @@ A <lightweight markup language https://en.wikipedia.org/wiki/Lightweight_markup_
 - <Extensible extras.md>
 - Typographically sound
 
-It is output format agnostic, and should be relatively easy to parse.
+Bismark is output format agnostic, and should be relatively easy to parse.
 
-Note that Bismark is still in flux and is subject to change. The issue queue is open for feedback.
+Note that it's still in flux and is subject to change. The issue queue is open for feedback.
 
 
 ## Documentation
