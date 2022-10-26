@@ -78,17 +78,17 @@ Markdown inside Bismark:
 
 ### Code
 
-Code enclosed in curly braces `{…}` will get evaluated when rendered.
+Code enclosed in double curly braces `{{…}}` will get evaluated when rendered.
 
-	The answer is... { 2 * 3 * 7 }!
+	The answer is... {{ 2 * 3 * 7 }}!
 
 > The answer is… 42!
 
-A language may be specified, similar to extensions and monospaced code blocks.
+A language may be specified, similar to monospaced code blocks and extensions.
 
-	{js
+	{{js
 	  [1, 2, 3, 4].reduce((acc, num) => acc + num, 0)
-	}
+	}}
 
 > 10
 
@@ -96,11 +96,11 @@ Of course, this isn't very portable. But within a certain environment, it could 
 
 For example, it could be used to create something like [Jupyter Notebook](https://jupyter.org/), with an interactive in-place editor and the result of the evaluation rendered directly below.
 
-	{kesh
+	{{kesh
 	    a: 20
 	    b: 22
 	    a + b
-	}
+	}}
 
 > ```
 > a: 20
@@ -109,14 +109,4 @@ For example, it could be used to create something like [Jupyter Notebook](https:
 > ```
 > > 42
 
-`{` and `}` are ubiquitous in programming languages, so parsers will have to keep track of opening and closing curly braces to find the closing `}`. This assumes that all in-code opening braces have a corresponding closing brace. For the same reason, any commented-out code must not contain non-matching `{` or `}`.
-
-Should the language be of the kind that allows non-matching `{`/`}`, use the more verbose extension syntax.
-
-	[[code(language: 'malbolge')
-	(=<`#9]~6ZY327Uv4-QsqpMn&+Ij"'E%e{Ab~w=_:]Kw%o44Uqp0/Q?xNvL:`H%c#DD2^WV>gY;dts76qKJImZkj
-	]]
-
-> Hello, World.
-
-Should the esoteric language also allow non-matching `[[`/`]]`, you're out of luck.
+`{{` and `}}` can occur in programming languages, so parsers will have to keep track of opening and closing `{{…}}` to find the closing `}}` of the code. The code itself can not contain any non-matching `{{` or `}}`, including in strings and comments.
