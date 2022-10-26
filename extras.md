@@ -109,7 +109,9 @@ For example, it could be used to create something like [Jupyter Notebook](https:
 > ```
 > > 42
 
-`{` and `}` are ubiquitous in programming languages, so parsers will have to keep track of opening and closing curly braces to find the closing `}`. This assumes that all in-code opening braces have a corresponding closing brace. Should the language allow non-matching `{`/`}`, one can use the more verbose extension syntax.
+`{` and `}` are ubiquitous in programming languages, so parsers will have to keep track of opening and closing curly braces to find the closing `}`. This assumes that all in-code opening braces have a corresponding closing brace. For the same reason, any commented-out code must not contain non-matching `{` or `}`.
+
+Should the language be of the kind that allows non-matching `{`/`}`, use the more verbose extension syntax.
 
 	[[code(language: 'malbolge')
 	(=<`#9]~6ZY327Uv4-QsqpMn&+Ij"'E%e{Ab~w=_:]Kw%o44Uqp0/Q?xNvL:`H%c#DD2^WV>gY;dts76qKJImZkj
@@ -117,6 +119,4 @@ For example, it could be used to create something like [Jupyter Notebook](https:
 
 > Hello, World.
 
-If the esoteric language also allows non-matching `[[`/`]]`, you're out of luck.
-
-Likewise, any commented-out code can not contain non-matching `{`/`}` (or `[[`/`]]`).
+Should the esoteric language also allow non-matching `[[`/`]]`, you're out of luck.
