@@ -100,7 +100,7 @@ The link's text comes before its destination.
 > [Website](https://example.com)  
 > [Email address](mailto:email@example.com)  
 
-The destination is always the last part of the whitespace delimited link.
+The destination is always the last part of the whitespace delimited link. The rest is the text.
 
 
 ### Block Quotes
