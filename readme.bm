@@ -70,8 +70,10 @@ Links are enclosed in angle brackets `<…>`.
 
 The link's text comes before its destination.
 
-	<A website https://example.com>
-	<An email email@example.com>
+	<Website https://example.com>
+	<Email address email@example.com>
+
+The destination is always the last part of the whitespace delimited link. The rest is the text.
 
 
 ### Block Quotes
@@ -83,7 +85,7 @@ The link's text comes before its destination.
 ### Monospaced Blocks
 
 	```
-	┬─┬ノ( º _ ºノ)
+	¯\_(ツ)_/¯
 	```
 
 The text may be syntax highlighted by specifying a language.
