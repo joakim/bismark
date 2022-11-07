@@ -187,8 +187,6 @@ The line must consist of (at least) four dashes. `---` is reserved for em-dash, 
 
 > ---
 
-Block quotes may contain thematic breaks.
-
 
 ### Beautification
 
