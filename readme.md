@@ -74,8 +74,8 @@ Either ordered or unordered.
 Nested items must be indented, either with spaces (at least to the start of the outer item's text) or with tabs (one for each indentation).
 
 	1. Ordered item
-		- Unordered item
-			- Nested item
+	   - Unordered item
+	     - Nested item
 
 > 1. Ordered item
 >    - Unordered item
@@ -104,6 +104,8 @@ The destination is always the last part of the whitespace delimited link. The re
 
 
 ### Block Quotes
+
+A block quote line must start with a `>` character followed by a space.
 
 	> Why are you quoting everything I say?
 	— Anonymous
@@ -154,18 +156,18 @@ All other definitions are snippets, and may be used to construct links.
 
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
-`id`s are case insensitive and can contain whitespace, but not `[` or `]`.
+`id`s are case insensitive and may contain whitespace, but must not start with `^`, `?` or `-` and must not contain `[` or `]`.
 
 
 ### Comments
 
-Comments are enclosed in square brackets that start with a `-`.
+Comments are enclosed in square brackets that start with `-`.
 
 	[- A comment for future reference -]
 
-	[-
+	[--
 	This is a _block_ comment.
-	-]
+	--]
 
 Uses cases include:
 
