@@ -9,8 +9,7 @@ For example:
 > \+ [Extensions](#extensions): Image, Table, Math  
 > \+ [Code](#code): JavaScript, Python
 
-
-## Documentation
+---
 
 <sub>Some examples are only visible with Markdown extensions.</sub>
 
@@ -38,7 +37,7 @@ Bismark renderers can be extended by sub-renderers to provide additonal features
 
 Enclosing a section of text in double square brackets `[[…]]` tagged with the name of an extension, will cause it to be rendered by that extension.
 
-Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. (Note how the image will fall back to a link in the first example.)
+Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. (Note how the image will fall back to a link in the example below.)
 
 	[[spoiler
 	  [[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
