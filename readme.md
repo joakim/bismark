@@ -8,13 +8,69 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 
 Bismark is output format agnostic, and should be relatively easy to parse.
 
-Note that it's still in flux and is subject to change. The issue queue is open for feedback.
+It is still in flux and is subject to change. Feedback is welcome.
 
-
-## Documentation
+--- 
 
 <sub>Some examples are only visible with Markdown extensions.</sub>
 
+
+## Inline Elements
+
+### Styling
+
+	*bold*
+	_italic_
+	`monospaced`
+
+> **bold**  
+> _italic_  
+> `monospaced`
+
+There's [no underline](https://practicaltypography.com/underlining.html).
+
+Styles can span lines within the same paragraph.
+
+	The most dangerous thought you can have
+	as a creative person is to *think you know
+	what you're doing*.
+
+> The most dangerous thought you can have  
+> as a creative person is to **think you know  
+> what you're doing**.
+
+
+### Links
+
+Links are enclosed in angle brackets `<…>`.
+
+	<https://example.com>
+	<email@example.com>
+
+> <https://example.com>  
+> <email@example.com>  
+
+The link's text comes before its destination.
+
+	<Website https://example.com>
+	<Email address email@example.com>
+
+> [Website](https://example.com)  
+> [Email address](mailto:email@example.com)  
+
+The destination is always the last part of the whitespace delimited link. The rest is the text.
+
+
+### References
+
+A reference is an identifier enclosed in square brackets `[…]` that has been [defined](#definitions).
+
+	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
+
+> According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
+
+
+## Block Elements
 
 ### Headings
 
@@ -44,29 +100,6 @@ Paragraphs are separated by one or more blank lines.
 > a hard line break.
 
 
-### Styling
-
-	*bold*
-	_italic_
-	`monospaced`
-
-> **bold**  
-> _italic_  
-> `monospaced`
-
-There's [no underline](https://practicaltypography.com/underlining.html).
-
-Styles can span lines within the same paragraph.
-
-	The most dangerous thought you can have
-	as a creative person is to *think you know
-	what you're doing*.
-
-> The most dangerous thought you can have  
-> as a creative person is to **think you know  
-> what you're doing**.
-
-
 ### Lists
 
 Either ordered or unordered.
@@ -82,30 +115,9 @@ Nested items must be indented, either with spaces (at least to the start of the 
 >      - Nested item
 
 
-### Links
-
-Links are enclosed in angle brackets `<…>`.
-
-	<https://example.com>
-	<email@example.com>
-
-> <https://example.com>  
-> <email@example.com>  
-
-The link's text comes before its destination.
-
-	<Website https://example.com>
-	<Email address email@example.com>
-
-> [Website](https://example.com)  
-> [Email address](mailto:email@example.com)  
-
-The destination is always the last part of the whitespace delimited link. The rest is the text.
-
-
 ### Block Quotes
 
-A block quote line must start with a `>` character followed by a space.
+A block quote line must start with a `>` character followed by whitespace.
 
 	> Why are you quoting everything I say?
 	— Anonymous
@@ -136,7 +148,16 @@ The text may be syntax highlighted by specifying a language.
 > ```
 
 
-### Definitions and References
+### Thematic Break
+
+The line must consist of (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
+
+	----
+
+> ---
+
+
+### Definitions
 
 Definitions have the syntax `[id]: value` and are referenced using `[id]`.
 
@@ -146,17 +167,32 @@ For notes, prefix the `id` with a `^`.
 For abbreviations, prefix the `id` with a `?`.  
 All other definitions are snippets, and may be used to construct links.
 
-	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
-
 	[^1]: In fact, many still pronounce it "sequel".
 	[?SQL]: Structured Query Language
 	[wikipedia]: http://en.wikipedia.org/wiki/
 
-> According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
-
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
-`id`s are case insensitive and may contain whitespace, but must not start with `^`, `?` or `-` and must not contain `[` or `]`.
+`id`s are case insensitive and may contain whitespace, but can't start with `^`, `?` or `-` and can't contain `[` or `]`.
+
+
+## Other
+
+### Beautification
+
+Because [typography matters](https://practicaltypography.com/).
+
+	... is an ellipsis
+	-- is an en-dash
+	--- is an em-dash
+	+- is a plus-minus
+
+> … is an ellipsis  
+> – is an en-dash  
+> — is an em-dash  
+> ± is a plus-minus
+
+“Smart quotes” may be provided as an option by the renderer.
 
 
 ### Comments
@@ -179,32 +215,6 @@ Uses cases include:
 Whether comments are rendered, and how, is up to the renderer.
 
 
-### Thematic Break
-
-The line must consist of (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
-
-	----
-
-> ---
-
-
-### Beautification
-
-Because [typography matters](https://practicaltypography.com/).
-
-	... is an ellipsis
-	-- is an en-dash
-	--- is an em-dash
-	+- is a plus-minus
-
-> … is an ellipsis  
-> – is an en-dash  
-> — is an em-dash  
-> ± is a plus-minus
-
-“Smart quotes” may be provided as an option by the renderer.
-
-
 ### Escaping
 
 Unintended formatting can be prevented with the escape character `\`.
@@ -219,7 +229,7 @@ Or by monospacing.
 
 > The asterisk `*` and backslash `\` are fine symbols indeed.
 
-Even line breaks can be escaped.
+Even line breaks can be escaped to get soft line breaks.
 
 	This line has a hard line break \
 	that is not rendered.
