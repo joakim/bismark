@@ -173,7 +173,7 @@ All other definitions are snippets, and may be used to construct links.
 
 Whether the definitions themselves are rendered, and how, is up to the renderer.
 
-`id`s are case insensitive and may contain whitespace, but can't start with `^`, `?` or `-` and can't contain `[` or `]`.
+`id` is case insensitive and may contain whitespace, but can't start with `^`, `?` or `-` and can't contain `[` or `]`.
 
 
 ## Other
