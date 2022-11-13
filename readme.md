@@ -159,7 +159,7 @@ The line must consist of (at least) four dashes. `---` is reserved for em-dash, 
 
 ### Definitions
 
-Definitions have the syntax `[id]: value` and are referenced using `[id]`.
+Definitions have the syntax `[id]: value` and are [referenced](#references) using `[id]`.
 
 Definitions can be used for notes, abbreviations and snippets.
 
