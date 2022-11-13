@@ -178,23 +178,6 @@ Whether the definitions themselves are rendered, and how, is up to the renderer.
 
 ## Other
 
-### Beautification
-
-Because [typography matters](https://practicaltypography.com/).
-
-	... is an ellipsis
-	-- is an en-dash
-	--- is an em-dash
-	+- is a plus-minus
-
-> … is an ellipsis  
-> – is an en-dash  
-> — is an em-dash  
-> ± is a plus-minus
-
-“Smart quotes” may be provided as an option by the renderer.
-
-
 ### Comments
 
 Comments are enclosed in square brackets that start with `-`.
@@ -213,6 +196,21 @@ Uses cases include:
 - Exclusion from output
 
 Whether comments are rendered, and how, is up to the renderer.
+
+
+### Beautification
+
+Because [typography matters](https://practicaltypography.com/).
+
+	... is an ellipsis
+	-- is an en-dash
+	--- is an em-dash
+
+> … is an ellipsis  
+> – is an en-dash  
+> — is an em-dash  
+
+“Smart quotes” may be provided as an option by the renderer.
 
 
 ### Escaping
