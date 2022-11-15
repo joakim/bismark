@@ -180,7 +180,7 @@ Whether the definitions themselves are rendered, and how, is up to the renderer.
 
 ### Comments
 
-Comments are enclosed in square brackets that start with `-`.
+Comments are enclosed in square brackets that start and end with `-`.
 
 	[- A comment for future reference -]
 
