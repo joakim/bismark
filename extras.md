@@ -88,12 +88,12 @@ Only one language can be supported at a time, to be specified by the renderer.
 
 It's not very portable, but within a certain environment, this could be very powerful.
 
-Because `{` and `}` can occur in programming languages, parsers must keep track of opening and closing `{…}` to find the closing `}` of the inline code. The code itself must not contain any non-matching `{` or `}`, including in strings or comments.
+Because `{` and `}` often occur in programming languages, parsers must allow nested `{…}` to reach the closing `}` of the inline code element. The code itself must not contain any non-matching `{` or `}`, including in strings or comments.
 
 
 ### Code blocks
 
-Code enclosed in double braces `{{…}}` will be evaluated as a block when rendered.
+Code enclosed in two or more braces `{{…}}` will be evaluated as a block when rendered.
 
 A supported language may be specified, similar to monospaced code blocks and extensions.
 
@@ -118,4 +118,4 @@ For example, it could be used to create something like [Jupyter Notebook](https:
 > ```
 > > 42
 
-Because `{{` and `}}` can occur in programming languages, parsers must keep track of opening and closing `{{…}}` to find the closing `}}` of the code block. The code itself must not contain any non-matching `{{` or `}}`, including in strings or comments.
+`{{` and `}}` can occur in programming languages. To avoid ambiguity, it's possible to use more than two curly braces, eg. `{{{ … }}}`.
