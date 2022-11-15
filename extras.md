@@ -36,7 +36,7 @@ The basic styles (bold, italic and monospaced) may be extended with additional s
 
 Bismark renderers can be extended by sub-renderers to provide additonal features.
 
-Enclosing a section of text in double square brackets `[[…]]` tagged with the name of an extension, will cause it to be rendered by that extension.
+Enclosing a section of text in double square brackets `[[ … ]]` tagged with the name of an extension, will cause it to be rendered by that extension.
 
 Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. (Note how the image will fall back to a link in the example below.)
 
@@ -78,7 +78,7 @@ Markdown inside Bismark:
 
 ### Inline code
 
-Code enclosed in curly braces `{…}` will be evaluated inline when rendered.
+Code enclosed in curly braces `{ … }` will be evaluated inline when rendered.
 
 	The answer is... { 2 * 3 * 7 }!
 
@@ -86,14 +86,14 @@ Code enclosed in curly braces `{…}` will be evaluated inline when rendered.
 
 Only one language can be supported at a time, to be specified by the renderer.
 
-It's not very portable, but within a certain environment, this could be very powerful.
+This is not very portable, but within a certain environment, it could be very powerful.
 
-Because `{` and `}` often occur in programming languages, parsers must allow nested `{…}` to reach the closing `}` of the inline code element. The code itself must not contain any non-matching `{` or `}`, including in strings or comments.
+Because `{` and `}` often occur in programming languages, parsers must allow nested `{ … }` to reach the closing `}` of the inline code element. The code itself must not contain any non-matching `{` or `}`, including in strings or comments.
 
 
 ### Code blocks
 
-Code enclosed in two or more braces `{{…}}` will be evaluated as a block when rendered.
+Code enclosed in two or more braces `{{ … }}` will be evaluated as a block when rendered.
 
 A supported language may be specified, similar to monospaced code blocks and extensions.
 
