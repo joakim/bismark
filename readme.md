@@ -29,16 +29,6 @@ It is still in flux and is subject to change. Feedback is welcome.
 
 There's [no underline](https://practicaltypography.com/underlining.html).
 
-Styles can span lines within the same paragraph.
-
-	The most dangerous thought you can have
-	as a creative person is to *think you know
-	what you're doing*.
-
-> The most dangerous thought you can have  
-> as a creative person is to **think you know  
-> what you're doing**.
-
 
 ### Links
 
@@ -91,13 +81,17 @@ There are [no more levels](https://practicaltypography.com/headings.html).
 
 Paragraphs are separated by one or more blank lines.
 
-[Hard line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained.
+[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained. Editors and views are expected to use [word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
 
-	Paragraph with
-	a hard line break.
+Inline styles can span lines within the same paragraph.
 
-> Paragraph with  
-> a hard line break.
+	The most dangerous thought you can have
+	as a creative person is to *think you know
+	what you're doing*.
+
+> The most dangerous thought you can have  
+> as a creative person is to **think you know  
+> what you're doing**.
 
 
 ### Lists
@@ -227,7 +221,7 @@ Or by monospacing.
 
 > The asterisk `*` and backslash `\` are fine symbols indeed.
 
-Even line breaks can be escaped to get soft line breaks.
+Even line breaks can be escaped.
 
 	This line has a hard line break \
 	that is not rendered.
