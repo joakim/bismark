@@ -62,7 +62,7 @@ There are <no more levels https://practicaltypography.com/headings.html>.
 
 Paragraphs are separated by one or more blank lines.
 
-<Line breaks https://practicaltypography.com/hard-line-breaks.html> within paragraphs are retained. Editors and views are expected to use <word wrap https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap>.
+<Line breaks https://practicaltypography.com/hard-line-breaks.html> within paragraphs are retained unless <escaped #escaping>. Editors and views are expected to use <word wrap https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap>.
 
 Inline styles can span lines within the same paragraph.
 
@@ -75,7 +75,7 @@ Inline styles can span lines within the same paragraph.
 
 Either ordered or unordered.
 
-Nested items must be indented, either with spaces (at least to the start of the outer item's text) or with tabs (one for each indentation).
+Nested items must be indented, either with spaces (at least to the start of the outer item's text) or with tabs (one for each indentation level).
 
 	1. Ordered item
 	   - Unordered item
@@ -92,6 +92,8 @@ A block quote line must start with a `>` character followed by whitespace.
 
 ### Monospaced Blocks
 
+A monospaced block is opened and closed with ` ``` `.
+
 	```
 	¯\_(ツ)_/¯
 	```
@@ -105,7 +107,9 @@ The text may be syntax highlighted by specifying a language.
 
 ### Thematic Break
 
-The line must consist of (at least) four dashes. `---` is reserved for em-dash, `--` for en-dash.
+The line must consist of at least four dashes.
+
+`---` is reserved for em-dash, `--` for en-dash.
 
 	----
 
@@ -175,7 +179,7 @@ Or by monospacing.
 
 	The asterisk `*` and backslash `\` are fine symbols indeed.
 
-Even line breaks can be escaped.
+Line breaks can also be escaped, emulating Markdown paragraphs.
 
 	This line has a hard line break \
 	that is not rendered.
