@@ -53,7 +53,7 @@ The destination is always the last part of the whitespace delimited link. The re
 
 ### References
 
-A reference is an identifier enclosed in square brackets `[…]` that has been [defined](#definitions).
+A reference is an identifier enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
 	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
