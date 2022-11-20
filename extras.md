@@ -117,5 +117,3 @@ For example, it could be used to create something like [Jupyter Notebook](https:
 > a + b
 > ```
 > > 42
-
-`{{` and `}}` can occur in programming languages. To avoid ambiguity, it's possible to use more than two curly braces, eg. `{{{ … }}}`.
