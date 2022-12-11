@@ -4,9 +4,10 @@ Holonic Bismark
 
 A superset of <Bismark https://github.com/joakim/bismark> that enables <holonic https://en.wikipedia.org/wiki/Holarchy> navigation.
 
+- A main title is marked by a line of dashes below it
 - There's only one heading marker (`#`)
-- Any sublevels are indented with the tab character
-- A title can be marked by a line of dashes below it
+- Subheadings are indented with tabs
+- Nested list items are indented with tabs
 - Blocks are given universally unique identifiers
 
 Other than that, it's the same as Bismark.
@@ -46,15 +47,11 @@ Other than that, it's the same as Bismark.
 
 # Block elements
 	
-	# Headings
+	# Heading
 		
-		A heading line must start with 1–3 `#` characters and a space.
+		A heading line must start with a `#` characters and a space.
 		
-			# Heading 1
-			## Heading 2
-			### Heading 3
-		
-		There are <no more levels https://practicaltypography.com/headings.html>.
+			# Heading
 	
 	# Paragraphs
 		
@@ -72,11 +69,11 @@ Other than that, it's the same as Bismark.
 		
 		Either ordered or unordered.
 		
-		Nested items must be indented, either with spaces (at least to the start of the outer item's text) or with tabs (one for each indentation level).
+		Nested items must be indented with tabs, one for each indentation level.
 		
 			1. Ordered item
-			   - Unordered item
-			     - Nested item
+				- Unordered item
+					- Nested item
 	
 	# Block Quotes
 		
