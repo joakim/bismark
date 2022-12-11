@@ -2,7 +2,7 @@
 Holonic Bismark
 ---------------
 
-A superset of <Bismark https://github.com/joakim/bismark> that enables <holonic https://en.wikipedia.org/wiki/Holarchy> navigation.
+A superset of <Bismark https://github.com/joakim/bismark> that enables structured <holonic https://en.wikipedia.org/wiki/Holarchy> navigation.
 
 - A main title is marked by a line of dashes below it
 - There's only one heading marker (`#`)
