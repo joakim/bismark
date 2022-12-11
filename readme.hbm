@@ -1,7 +1,7 @@
 Holonic Bismark
 ---------------
 
-A superset of <Bismark https://github.com/joakim/bismark> that enables <holonic https://en.wikipedia.org/wiki/Holarchy> navigation, inspired by Doug Engelbart's <Augment https://www.dougengelbart.org/hs/oad-2250-Authorship.html>.
+A superset of <Bismark https://github.com/joakim/bismark> that enables <holonic https://en.wikipedia.org/wiki/Holarchy> navigation.
 
 - There's only one heading marker (`#`)
 - Any sublevels are indented with the tab character
