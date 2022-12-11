@@ -6,7 +6,7 @@ A superset of <Bismark https://github.com/joakim/bismark> that enables <holonic 
 
 - A main title is marked by a line of dashes below it
 - There's only one heading marker (`#`)
-- Subheadings are indented with tabs
+- Subheadings are indented with tabs, to any level
 - Nested list items are indented with tabs
 - Blocks are given universally unique identifiers
 
