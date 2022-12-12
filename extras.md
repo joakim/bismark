@@ -6,7 +6,7 @@ For example:
 
 > **[Basic Bismark](/readme.md)**  
 > \+ [Styling](#styling): Highlight, Superscript, Subscript  
-> \+ [Checklists](#checklists)
+> \+ [Checklists](#checklists)  
 > \+ [Extensions](#extensions): Image, Table, Math  
 > \+ [Inline code](#inline-code): JavaScript  
 > \+ [Code blocks](#code-blocks): JavaScript, Python
