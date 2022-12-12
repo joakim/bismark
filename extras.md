@@ -33,19 +33,6 @@ The basic styles (bold, italic and monospaced) may be extended with additional s
 > <sub>subscript</sub>
 
 
-### Checklists
-
-Because `[x]` is a valid [definition](https://github.com/joakim/bismark#definitions), `[-]` is used to tick a checkbox. Unlike Markdown, a checklist doesn't have to be an unordered list.
-
-	Todo:
-	[-] Water the dog
-	[ ] Feed the plants
-
-> Todo:
-> - [x] Water the dog
-> - [ ] Feed the plants
-
-
 ### Extensions
 
 Bismark renderers can be extended by sub-renderers to provide additonal features.
