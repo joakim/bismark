@@ -50,8 +50,6 @@ Other than that, it's the same as Bismark.
 	# Heading
 		
 		A heading line must start with a `#` characters and a space.
-		
-			# Heading
 	
 	# Paragraphs
 		
