@@ -38,12 +38,12 @@ The basic styles (bold, italic and monospaced) may be extended with additional s
 Because `[x]` is a valid [definition](https://github.com/joakim/bismark#definitions), `[-]` is used to tick a checkbox. Unlike Markdown, a checklist doesn't have to be an unordered list.
 
 	Todo:
-	[-] Check
-	[ ] Uncheck
+	[-] Water the dog
+	[ ] Feed the plants
 
 > Todo:
-> - [x] Check
-> - [ ] Uncheck
+> - [x] Water the dog
+> - [ ] Feed the plants
 
 
 ### Extensions
