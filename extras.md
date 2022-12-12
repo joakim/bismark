@@ -6,6 +6,7 @@ For example:
 
 > **[Basic Bismark](/readme.md)**  
 > \+ [Styling](#styling): Highlight, Superscript, Subscript  
+> \+ [Checklists](#checklists)
 > \+ [Extensions](#extensions): Image, Table, Math  
 > \+ [Inline code](#inline-code): JavaScript  
 > \+ [Code blocks](#code-blocks): JavaScript, Python
@@ -30,6 +31,19 @@ The basic styles (bold, italic and monospaced) may be extended with additional s
 > <ins>inserted</ins>  
 > <sup>superscript</sup>  
 > <sub>subscript</sub>
+
+
+### Checklists
+
+Because `[x]` is a valid [definition](https://github.com/joakim/bismark#definitions), `[-]` is used to tick a checkbox. Unlike Markdown, it doesn't have to be a list.
+
+	Todo:
+	[-] Check
+	[ ] Uncheck
+
+> Todo:
+> - [x] Check
+> - [ ] Uncheck
 
 
 ### Extensions
