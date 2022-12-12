@@ -73,6 +73,14 @@ Other than that, it's the same as Bismark.
 				- Unordered item
 					- Nested item
 	
+	# Checklists
+		
+		A checkbox line must start with `[ ]` (unchecked) or `[-]` (checked).
+		
+			Todo:
+			[-] Water the dog
+			[ ] Feed the plants
+	
 	# Block Quotes
 		
 		A block quote line must start with a `>` character followed by whitespace.
