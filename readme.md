@@ -109,6 +109,19 @@ Nested items must be indented, either with spaces (at least to the start of the 
 >      - Nested item
 
 
+### Checklists
+
+A checkbox line must start with `[ ]` (unchecked) or `[-]` (checked).
+
+	Todo:
+	[-] Water the dog
+	[ ] Feed the plants
+
+> Todo:
+> - [x] Water the dog
+> - [ ] Feed the plants
+
+
 ### Block Quotes
 
 A block quote line must start with a `>` character followed by whitespace.
