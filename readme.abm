@@ -6,7 +6,7 @@ Differences from "flat" Bismark:
 
 	- Blocks _must_ be separated by an empty line
 	- Indentation with horizontal tabs create a nested structure
-		- List items _must_ be indented with horizontal tabs
+	- List items _must_ be indented with horizontal tabs
 	- There's only one header marker: `#`
 		- Subheadings are achieved with indentation (no more than 3 levels recommended)
 	- A document _may_ have _one_ title, marked with `##` (it _must_ come before the first header)
