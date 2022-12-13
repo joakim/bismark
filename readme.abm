@@ -9,7 +9,7 @@ Differences from "flat" Bismark:
 	- List items _must_ be indented with horizontal tabs
 	- There's only one header marker: `#`
 		- Subheadings are achieved with indentation (no more than 3 levels recommended)
-	- A document _may_ have _one_ title, marked with `##` (it _must_ come before the first header)
+	- A document _may_ have _one_ title, marked with `##`, which _must_ come before the first header
 	- A document's blocks _may_ all be prefixed with unique addresses: horizontal tab, unique identifier, horizontal tab
 
 Some suitable unique identifier schemes:
