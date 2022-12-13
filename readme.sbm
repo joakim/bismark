@@ -80,6 +80,7 @@ Other than that, it's the same as Bismark.
 		A checkbox line must start with `[ ]` (unchecked) or `[-]` (checked).
 		
 			Todo:
+			
 			[-] Water the dog
 			[ ] Feed the plants
 	
@@ -88,6 +89,7 @@ Other than that, it's the same as Bismark.
 		A block quote line must start with a `>` character followed by whitespace.
 		
 			> Why are you quoting everything I say?
+			
 			— Anonymous
 	
 	# Monospaced Blocks
