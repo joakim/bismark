@@ -51,6 +51,19 @@ The link's text comes before its destination.
 The destination is always the last part of the whitespace delimited link. The rest is the text.
 
 
+### Checkbox
+
+A checkbox is either checked `[-]` or unchecked `[ ]`.
+
+	Todo:
+	[-] Water the dog
+	[ ] Feed the plants
+
+> Todo:
+> - [x] Water the dog
+> - [ ] Feed the plants
+
+
 ### References
 
 A reference is an identifier enclosed in square brackets `[…]` that matches a [definition](#definitions).
@@ -107,19 +120,6 @@ Nested items must be indented, either with spaces (at least to the start of the 
 > 1. Ordered item
 >    - Unordered item
 >      - Nested item
-
-
-### Checklists
-
-A checkbox line must start with `[ ]` (unchecked) or `[-]` (checked).
-
-	Todo:
-	[-] Water the dog
-	[ ] Feed the plants
-
-> Todo:
-> - [x] Water the dog
-> - [ ] Feed the plants
 
 
 ### Block Quotes
