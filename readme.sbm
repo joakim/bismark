@@ -1,18 +1,22 @@
-
-Structured Bismark
-------------------
+## Structured Bismark
 
 A structured variant of <Bismark https://github.com/joakim/bismark> that enables adressable blocks and <holonic https://en.wikipedia.org/wiki/Holarchy> navigation.
 
-	- All blocks must be separated by an empty line
-	- Indentation with tabs create a holarchic structure
-		- Nested list items must be indented with tabs
-	- There's only one marker for headings (`#`)
-		- Subheadings are achieved with indentation (no more than 3 levels recommended)
-	- A main title can be marked with dashes on the line directly below it
-	- Each block may be assigned a universally unique identifier and/or a content-adressable identifier
+Differences from Bismark:
 
-Other than that, it's the same as Bismark.
+	- Blocks _must_ be separated by an empty line
+	- Indentation with horizontal tabs create a nested structure
+		- List items _must_ be indented with horizontal tabs
+		- There's only one header marker: `#`
+			- Subheadings are achieved with indentation (no more than 3 levels recommended)
+	- A document _may_ have _one_ title, marked with `##` (it _must_ come before the first header)
+	- A document's blocks _may_ all be prefixed with unique addresses: horizontal tab, unique identifier, horizontal tab
+
+Some suitable unique identifier schemes:
+
+- <UUIDs https://en.wikipedia.org/wiki/Universally_unique_identifier>
+- <ULIDs https://github.com/ulid/spec>
+- <CIDs https://docs.ipfs.tech/concepts/content-addressing>) (<content-adressing https://en.wikipedia.org/wiki/Content-addressable_storage>)
 
 ----
 
