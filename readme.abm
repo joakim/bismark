@@ -15,8 +15,8 @@ Differences from "flat" Bismark:
 Some suitable unique identifier schemes:
 
 	- <UUIDs https://en.wikipedia.org/wiki/Universally_unique_identifier>
-	- <ULIDs https://github.com/ulid/spec>
-	- <CIDs https://docs.ipfs.tech/concepts/content-addressing>) (<content-adressing https://en.wikipedia.org/wiki/Content-addressable_storage>)
+		- <ULIDs https://github.com/ulid/spec>
+	- <CIDs https://docs.ipfs.tech/concepts/content-addressing> (<content-adressing https://en.wikipedia.org/wiki/Content-addressable_storage>)
 
 ----
 
