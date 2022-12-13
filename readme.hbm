@@ -142,10 +142,11 @@ Other than that, it's the same as Bismark.
 			--]
 		
 		Uses cases include:
-		- Notes to self
-		- Placeholders
-		- Corrections
-		- Exclusion from output
+		
+			- Notes to self
+			- Placeholders
+			- Corrections
+			- Exclusion from output
 		
 		Whether comments are rendered, and how, is up to the renderer.
 	
