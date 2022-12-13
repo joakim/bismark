@@ -51,7 +51,7 @@ The link's text comes before its destination.
 The destination is always the last part of the whitespace delimited link. The rest is the text.
 
 
-### Checkbox
+### Checkboxes
 
 A checkbox is either checked `[-]` or unchecked `[ ]`.
 
