@@ -1,8 +1,8 @@
-## Structured Bismark
+## Augmented Bismark
 
 A structured variant of <Bismark https://github.com/joakim/bismark> that enables adressable blocks and <holonic https://en.wikipedia.org/wiki/Holarchy> navigation.
 
-Differences from Bismark:
+Differences from "flat" Bismark:
 
 	- Blocks _must_ be separated by an empty line
 	- Indentation with horizontal tabs create a nested structure
