@@ -2,7 +2,7 @@
 Structured Bismark
 ------------------
 
-A structured superset of <Bismark https://github.com/joakim/bismark> that enables adressable blocks and <holonic https://en.wikipedia.org/wiki/Holarchy> navigation.
+A structured variant of <Bismark https://github.com/joakim/bismark> that enables adressable blocks and <holonic https://en.wikipedia.org/wiki/Holarchy> navigation.
 
 	- All blocks must be separated by an empty line
 	- Indentation with tabs create a holarchic structure
