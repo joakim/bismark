@@ -146,16 +146,6 @@ A monospaced block is opened and closed with ` ``` `.
 > ¯\_(ツ)_/¯
 > ```
 
-The text may be syntax highlighted by specifying a language.
-
-	```rebol
-	print "Hello, world!"
-	```
-
-> ```rebol
-> print "Hello, world!"
-> ```
-
 
 ### Thematic Break
 

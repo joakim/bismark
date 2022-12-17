@@ -7,6 +7,7 @@ For example:
 > **[Basic Bismark](/readme.md)**  
 > \+ [Styling](#styling): Highlight, Superscript, Subscript  
 > \+ [Extensions](#extensions): Image, Table, Math  
+> \+ [Syntax highlighting](#syntax-highlighting): JavaScript, Python, Rebol  
 > \+ [Inline code](#inline-code): JavaScript  
 > \+ [Code blocks](#code-blocks): JavaScript, Python
 
@@ -74,6 +75,19 @@ Markdown inside Bismark:
 	Because [[md *why not!* ]]
 
 > Because *why not!*
+
+
+### Syntax highlighting
+
+[Monospaced blocks](/readme.md#monospaced-blocks) may be syntax highlighted by specifying a supported language.
+
+	```rebol
+	print "Hello, world!"
+	```
+
+> ```rebol
+> print "Hello, world!"
+> ```
 
 
 ### Inline code
