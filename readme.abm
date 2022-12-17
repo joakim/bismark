@@ -56,7 +56,7 @@ Some suitable unique identifier schemes:
 		
 		A reference is an identifier enclosed in square brackets `[…]` that matches a <definition #definitions>.
 		
-		According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
+			According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
 
 # Block elements
