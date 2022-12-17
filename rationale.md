@@ -1,4 +1,4 @@
-# Rationale
+# Rationale (draft)
 
 Return to the essence of Markdown (ATX) and try again.
 

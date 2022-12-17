@@ -5,7 +5,7 @@ A Bismark editor should show which extra features it supports. Either with its t
 For example:
 
 > **[Basic Bismark](/readme.md)**  
-> \+ [Styling](#styling): Highlight, Superscript, Subscript  
+> \+ [Inline styles](#inline-styles): Highlight, Superscript, Subscript  
 > \+ [Extensions](#extensions): Image, Table, Math  
 > \+ [Syntax highlighting](#syntax-highlighting): JavaScript, Python, Rebol  
 > \+ [Inline code](#inline-code): JavaScript  
@@ -16,9 +16,9 @@ For example:
 <sub>Some examples are only visible with Markdown extensions.</sub>
 
 
-### Styling
+### Inline styles
 
-The basic styles (bold, italic and monospaced) may be extended with additional styles from a predetermined set.
+Inline [styles](/readme.md#styling) (bold, italic and monospaced) may be extended with additional styles from a predetermined set.
 
 	==highlighted==
 	~~redacted~~

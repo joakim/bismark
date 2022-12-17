@@ -134,7 +134,7 @@ Some suitable unique identifier schemes:
 
 	# Comments
 		
-		Comments are enclosed in square brackets that start with a `-`.
+		Comments are enclosed in square brackets that start and end with a `-`.
 		
 			[- A comment for future reference -]
 		
