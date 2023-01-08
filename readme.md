@@ -127,6 +127,7 @@ Nested items must be indented, either with spaces (at least to the start of the 
 A block quote line must start with a `>` character followed by whitespace.
 
 	> Why are you quoting everything I say?
+	
 	— Anonymous
 
 > > Why are you quoting everything I say?
