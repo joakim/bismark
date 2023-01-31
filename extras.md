@@ -18,7 +18,7 @@ For example:
 
 ### Inline styles
 
-Inline [styles](/readme.md#styling) (bold, italic and monospaced) may be extended with additional styles from a predetermined set.
+Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended with additional styles from a predetermined set.
 
 	==highlighted==
 	~~redacted~~
@@ -79,7 +79,7 @@ Markdown inside Bismark:
 
 ### Syntax highlighting
 
-[Monospaced blocks](/readme.md#monospaced-blocks) may be syntax highlighted by specifying a supported language.
+[Verbatim blocks](/readme.md#verbatim-blocks) may be syntax highlighted by specifying a supported language.
 
 	```rebol
 	print "Hello, world!"
@@ -109,7 +109,7 @@ Because `{` and `}` often occur in programming languages, parsers must allow nes
 
 Code enclosed in two or more braces `{{ … }}` will be evaluated as a block when rendered.
 
-A supported language may be specified, similar to monospaced code blocks and extensions.
+A supported language may be specified, similar to syntax highlighted verbatim blocks and extensions.
 
 	{{js
 	  [1, 2, 3, 4].reduce((acc, num) => acc + num, 0)

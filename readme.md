@@ -18,13 +18,15 @@ It is still in flux and is subject to change. Feedback is welcome.
 
 	*bold*
 	_italic_
-	`monospaced`
+	`verbatim`
 
 > **bold**  
 > _italic_  
-> `monospaced`
+> `verbatim`
 
 There's [no underline](https://practicaltypography.com/underlining.html).
+
+By convention, verbatim text is rendered in a monospaced font.
 
 
 ### Links
@@ -134,9 +136,9 @@ A block quote line must start with a `>` character followed by whitespace.
 > — Anonymous
 
 
-### Monospaced Blocks
+### Verbatim Blocks
 
-A monospaced block is opened and closed with ` ``` `.
+A verbatim block is opened and closed with a line starting with ` ``` `.
 
 	```
 	¯\_(ツ)_/¯
