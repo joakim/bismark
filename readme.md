@@ -65,7 +65,7 @@ A checkbox is either checked `[-]` or unchecked `[ ]`.
 
 A reference is an identifier enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
+	According to <Wikipedia [$wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
 > According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
 
@@ -160,21 +160,21 @@ It may resemble a [dinkus](https://en.wikipedia.org/wiki/Dinkus) or a horizontal
 
 ### Definitions
 
-Definitions have the syntax `[id]: value` and are [referenced](#references) using `[id]`.
+Definitions have the syntax `[identifier]: value` and are [referenced](#references) using `[identifier]`.
 
-Definitions can be used for notes, abbreviations and snippets.
+Definitions are used for notes, abbreviations and snippets.
 
-For notes, prefix the `id` with a `^`.  
-For abbreviations, prefix the `id` with a `?`.  
-All other definitions are snippets, and may be used to construct links.
+For notes, the `identifier` must start with a `^`.  
+For abbreviations, the `identifier` must start with a `?`.  
+For snippets, the `identifier` must start with a `$`.
+
+The `identifier` is case insensitive and can't contain `[` or `]`.
 
 	[^1]: In fact, many still pronounce it "sequel".
 	[?SQL]: Structured Query Language
-	[wikipedia]: http://en.wikipedia.org/wiki/
+	[$wikipedia]: http://en.wikipedia.org/wiki/
 
-Whether the definitions themselves are rendered, and how, is up to the renderer.
-
-`id` is case insensitive and may contain whitespace, but can't start with `^`, `?` or `-` and can't contain `[` or `]`.
+Square brackets are also used by [comments](#comments) and [extensions](extras.md#extensions).
 
 
 ## Other
@@ -185,9 +185,9 @@ Comments are enclosed in square brackets that start and end with `-`.
 
 	[- A comment for future reference -]
 
-	[--
+	[-
 	This is a _block_ comment.
-	--]
+	-]
 
 Uses cases include:
 
@@ -195,8 +195,6 @@ Uses cases include:
 - Placeholders
 - Corrections
 - Exclusion from output
-
-Whether comments are rendered, and how, is up to the renderer.
 
 
 ### Beautification

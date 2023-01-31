@@ -37,13 +37,13 @@ Inline [styles](/readme.md#styling) (bold, italic and monospaced) may be extende
 
 Bismark renderers can be extended by sub-renderers to provide additonal features.
 
-Enclosing a section of text in double square brackets `[[ … ]]` tagged with the name of an extension, will cause it to be rendered by that extension.
+Enclosing a section of text in square brackets `[ … ]` tagged with the name of an extension, will cause it to be rendered by that extension.
 
 Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. (Note how the image will fall back to a link in the example below.)
 
-	[[spoiler
-	  [[image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]]
-	]]
+	[spoiler
+	  [image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]
+	]
 
 > <details>
 > <summary>Spoiler</summary>
@@ -54,12 +54,12 @@ Here are some more examples…
 
 Tables, using Markdown's syntax:
 
-	[[table
+	[table
 	| Bismark    | Markdown                |
 	| ---------- | ----------------------- |
 	| `*bold*`   | `**bold**` / `__bold__` |
 	| `_italic_` | `*italic*` / `_italic_` |
-	]]
+	]
 
 > | Bismark    | Markdown                |
 > | ---------- | ----------------------- |
@@ -68,11 +68,11 @@ Tables, using Markdown's syntax:
 
 Math formulas, assuming the environment supports TeX:
 
-	[[tex \dfrac{\partial y}{\partial x} = x ]]
+	[tex \dfrac{\partial y}{\partial x} = x ]
 
 Markdown inside Bismark:
 
-	Because [[md *why not!* ]]
+	Because [md *why not!* ]
 
 > Because *why not!*
 
