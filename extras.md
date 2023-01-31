@@ -71,6 +71,8 @@ Math formulas, assuming the environment supports TeX:
 
 	[tex \dfrac{\partial y}{\partial x} = x ]
 
+> $$ \dfrac{\partial y}{\partial x} = x $$
+
 Markdown inside Bismark:
 
 	Because [md *why not!* ]
@@ -93,11 +95,15 @@ Markdown inside Bismark:
 
 ### Inline Code
 
-Code enclosed in curly braces `{ … }` will be evaluated inline when rendered.
+Code enclosed in curly braces `{…}` will be evaluated inline when rendered.
 
 	The answer is... { 2 * 3 * 7 }!
+	
+	Last updated: { Temporal.Now.plainDateTimeISO().toLocaleString('se') }
 
 > The answer is… 42!
+> 
+> Last updated: 2023-01-31 14:27:01
 
 Only one language can be supported at a time, to be specified by the renderer. While this is not very portable, it could be a powerful feature within an environment.
 
