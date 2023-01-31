@@ -12,9 +12,6 @@ It is still in flux and is subject to change. Feedback is welcome.
 
 --- 
 
-<sub>Some examples are only visible with Markdown extensions.</sub>
-
-
 ## Inline Elements
 
 ### Styling
@@ -71,6 +68,8 @@ A reference is an identifier enclosed in square brackets `[…]` that matches a 
 	According to <Wikipedia [wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
 > According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
+
+<sub>Parts of this example is only visible with certain Markdown extensions.</sub>
 
 
 ## Block Elements
