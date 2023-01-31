@@ -49,7 +49,7 @@ Differences from "flat" Bismark:
 		
 		A reference is an identifier enclosed in square brackets `[…]` that matches a <definition #definitions>.
 		
-			According to <Wikipedia [$wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
+			According to <Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
 
 # Block elements
@@ -112,13 +112,13 @@ Differences from "flat" Bismark:
 		
 		For notes, prefix the `identifier` with a `^`.
 		For abbreviations, prefix the `identifier` with a `?`.
-		For snippets, the `identifier` must start with a `$`.
+		For snippets, the `identifier` must start with a `+`.
 		
 		The `identifier` is case insensitive and can't contain `[` or `]`.
 		
 			[^1]: In fact, many still pronounce it "sequel".
 			[?SQL]: Structured Query Language
-			[$wikipedia]: http://en.wikipedia.org/wiki/
+			[+wikipedia]: http://en.wikipedia.org/wiki/
 		
 		Square brackets are also used by <comments #comments> and <extensions extras.md#extensions>.
 

@@ -65,7 +65,7 @@ A checkbox is either checked `[-]` or unchecked `[ ]`.
 
 A reference is an identifier enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	According to <Wikipedia [$wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
+	According to <Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
 > According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
 
@@ -166,13 +166,13 @@ Definitions are used for notes, abbreviations and snippets.
 
 For notes, the `identifier` must start with a `^`.  
 For abbreviations, the `identifier` must start with a `?`.  
-For snippets, the `identifier` must start with a `$`.
+For snippets, the `identifier` must start with a `+`.
 
 The `identifier` is case insensitive and can't contain `[` or `]`.
 
 	[^1]: In fact, many still pronounce it "sequel".
 	[?SQL]: Structured Query Language
-	[$wikipedia]: http://en.wikipedia.org/wiki/
+	[+wikipedia]: http://en.wikipedia.org/wiki/
 
 Square brackets are also used by [comments](#comments) and [extensions](extras.md#extensions).
 
