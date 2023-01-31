@@ -67,11 +67,11 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 
 ### References
 
-A reference is an identifier enclosed in square brackets `[…]` that matches a [definition](#definitions).
+A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
+	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[*a]
 
-> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
+> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^a]
 
 <sub>This example requires certain Markdown extensions to render correctly.</sub>
 
@@ -164,19 +164,19 @@ By convention, it would resemble a [dinkus](https://en.wikipedia.org/wiki/Dinkus
 
 ### Definitions
 
-Definitions have the syntax `[identifier]: value` and are [referenced](#references) using `[identifier]`.
+Definitions have the syntax `[key]: value` and are [referenced](#references) using `[key]`.
 
-Definitions are used for notes, abbreviations and snippets.
+Definitions are used for snippets, abbreviations and notes.
 
-For notes, the `identifier` must start with a `^`.  
-For abbreviations, the `identifier` must start with a `?`.  
-For snippets, the `identifier` must start with a `+`.
+For snippets, the `key` must start with a `+`.  
+For abbreviations, the `key` must start with a `?`.  
+For notes, the `key` must start with a `*`.
 
-The `identifier` is case insensitive and can't contain spaces, `[` or `]`.
+The `key` is case insensitive and can't contain spaces, `[` or `]`.
 
-	[^1]: In fact, many still pronounce it "sequel".
-	[?SQL]: Structured Query Language
 	[+wikipedia]: http://en.wikipedia.org/wiki/
+	[?SQL]: Structured Query Language
+	[*a]: In fact, many still pronounce it "sequel".
 
 Square brackets are also used by [checkboxes](#checkboxes), [comments](#comments) and [extensions](/extras.md#extensions).
 
@@ -253,4 +253,4 @@ In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM) ([atx](
 
 
 
-[^1]: In fact, many still pronounce it "sequel".
+[^a]: In fact, many still pronounce it "sequel".
