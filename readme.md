@@ -69,9 +69,9 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 
 A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[*a]
+	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[*a][^1]
 
-> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^a]
+> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^a][^1]
 
 <sub>This example requires certain Markdown extensions to render correctly.</sub>
 
@@ -166,16 +166,18 @@ By convention, it would resemble a [dinkus](https://en.wikipedia.org/wiki/Dinkus
 
 Definitions have the syntax `[key]: value` and are [referenced](#references) using `[key]`.
 
-Definitions are used for snippets, abbreviations and notes.
+Definitions are used for snippets, abbreviations, citations and notes.
 
 For snippets, the `key` must start with a `+`.  
 For abbreviations, the `key` must start with a `?`.  
+For citations, the `key` must start with a `^`.  
 For notes, the `key` must start with a `*`.
 
 The `key` is case insensitive and can't contain spaces, `[` or `]`.
 
 	[+wikipedia]: http://en.wikipedia.org/wiki/
 	[?SQL]: Structured Query Language
+	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
 
 Square brackets are also used by [checkboxes](#checkboxes), [comments](#comments) and [extensions](/extras.md#extensions).
@@ -253,4 +255,5 @@ In memory of [Aaron Swartz](https://www.youtube.com/watch?v=gpvcc9C8SbM) ([atx](
 
 
 
-[^a]: In fact, many still pronounce it "sequel".
+[^note]: In fact, many still pronounce it "sequel".
+[^1]: D.D. Chamberlin, [Oral history interview with Donald D. Chamberlin](https://hdl.handle.net/11299/107215) (Charles Babbage Institute, 2001).

@@ -51,7 +51,7 @@ Differences from "flat" Bismark:
 		
 		A reference is a key enclosed in square brackets `[…]` that matches a <definition #definitions>.
 		
-			<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[*a]
+			<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[*a][^1]
 
 
 # Block Elements
@@ -110,16 +110,18 @@ Differences from "flat" Bismark:
 		
 		Definitions have the syntax `[key]: value` and are <referenced #references> using `[key]`.
 		
-		Definitions are used for notes, abbreviations and snippets.
+		Definitions are used for snippets, abbreviations, citations and notes.
 		
 		For snippets, the `key` must start with a `+`.
 		For abbreviations, prefix the `key` with a `?`.
+		For citations, the `key` must start with a `^`.
 		For notes, prefix the `key` with a `*`.
 		
 		The `key` is case insensitive and can't contain spaces, `[` or `]`.
 		
 			[+wikipedia]: http://en.wikipedia.org/wiki/
 			[?SQL]: Structured Query Language
+			[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 			[*a]: In fact, many still pronounce it "sequel".
 		
 		Square brackets are also used by <checkboxes #checkboxes>, <comments #comments> and <extensions /extras.md#extensions>.
