@@ -51,7 +51,7 @@ Differences from "flat" Bismark:
 		
 		A reference is a key enclosed in square brackets `[…]` that matches a <definition #definitions>.
 		
-			<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[*a][^1]
+			<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1][*a]
 
 
 # Block Elements

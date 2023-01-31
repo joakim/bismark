@@ -69,9 +69,9 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 
 A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[*a][^1]
+	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1][*a]
 
-> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^a][^1]
+> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
 
 <sub>This example requires certain Markdown extensions to render correctly.</sub>
 
