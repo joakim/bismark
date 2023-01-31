@@ -52,10 +52,10 @@ The destination is always the last part of the whitespace delimited link. The re
 
 ### Checkboxes
 
-A checkbox is either checked `[-]` or unchecked `[ ]`.
+A checkbox is either checked `[x]` or unchecked `[ ]`.
 
 	Todo:
-	[-] Water the dog
+	[x] Water the dog
 	[ ] Feed the plants
 
 > Todo:
@@ -67,9 +67,9 @@ A checkbox is either checked `[-]` or unchecked `[ ]`.
 
 A reference is an identifier enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	According to <Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
+	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
-> According to [Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
+> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
 
 <sub>Parts of this example is only visible with certain Markdown extensions.</sub>
 
@@ -170,20 +170,20 @@ For notes, the `identifier` must start with a `^`.
 For abbreviations, the `identifier` must start with a `?`.  
 For snippets, the `identifier` must start with a `+`.
 
-The `identifier` is case insensitive and can't contain `[` or `]`.
+The `identifier` is case insensitive and can't contain spaces, `[` or `]`.
 
 	[^1]: In fact, many still pronounce it "sequel".
 	[?SQL]: Structured Query Language
 	[+wikipedia]: http://en.wikipedia.org/wiki/
 
-Square brackets are also used by [comments](#comments) and [extensions](extras.md#extensions).
+Square brackets are also used by [checkboxes](#checkboxes), [comments](#comments) and [extensions](/extras.md#extensions).
 
 
 ## Other
 
 ### Comments
 
-Comments are enclosed in square brackets that start and end with `-`.
+Comments are enclosed in square brackets that start with and optionally end with `-`.
 
 	[- A comment for future reference -]
 
