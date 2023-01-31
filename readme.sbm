@@ -163,11 +163,7 @@ Differences from "flat" Bismark:
 		Unintended formatting can be prevented with the escape character `\`.
 		
 			The asterisk \* and backslash \\ are fine symbols indeed.
-		
-		Or by monospacing.
-		
-			The asterisk `*` and backslash `\` are fine symbols indeed.
-		
+
 		Line breaks can also be escaped, emulating Markdown paragraphs.
 		
 			This line has a hard line break \
