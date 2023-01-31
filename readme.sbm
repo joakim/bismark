@@ -145,6 +145,7 @@ Differences from "flat" Bismark:
 			- Placeholders
 			- Corrections
 			- Exclusion from output
+			[- Commenting out a list item]
 	
 	# Beautification
 		
