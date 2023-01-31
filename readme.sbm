@@ -56,7 +56,7 @@ Differences from "flat" Bismark:
 	
 	# Heading
 		
-		A heading line must start with a `#` characters and a space.
+		A heading line must start with a `#` character and a space.
 	
 	# Paragraphs
 		
