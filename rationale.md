@@ -1,4 +1,4 @@
-# Rationale (draft)
+# Rationale (early draft)
 
 Return to the essence of Markdown (ATX) and try again.
 
@@ -19,7 +19,7 @@ Return to the essence of Markdown (ATX) and try again.
   Typographic best practices should be baked into the language.
 
 7. Output agnostic  
-  Don't assume plain-text email as input and HTML as output. Don't even assume it's for the web.
+  Don't assume plain-text email written by programmers as input and HTML as output. Don't even assume it's for the web, that's just limiting its utility.
 
 8. Parsing should be guided by decisions made in [Djot](https://github.com/jgm/djot)  
-   I trust that the decisions made by John MacFarlane are sound, so instead of repeating what has already been done, they should be used as inspiration whenever they apply to Bismark's syntax and rationale. Although I wasn't aware of Djot when designing Bismark, they are in many ways related.
+   I trust that the decisions made by John MacFarlane are sound, so they should be used as inspiration whenever they apply to Bismark's syntax and rationale. Although I wasn't aware of Djot when designing Bismark, they are in many ways related.
