@@ -149,11 +149,11 @@ A verbatim block is opened and closed with a line starting with ` ``` `.
 > ```
 
 
-### Thematic Break
+### Thematic Breaks
 
-The line must consist of only `-` or `*` characters (at least two, in any combination) and spaces.
+The line must only consist of `-` and `*` characters (at least two) and spaces, in any combination.
 
-It may resemble a [dinkus](https://en.wikipedia.org/wiki/Dinkus) or a horizontal line.
+By convention, it would resemble a [dinkus](https://en.wikipedia.org/wiki/Dinkus) or a horizontal line.
 
 	- * -
 

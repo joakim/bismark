@@ -10,7 +10,7 @@ Bismark is output format agnostic, and should be relatively easy to parse.
 
 It is still in flux and is subject to change. Feedback is welcome.
 
-----
+---
 
 ## Inline elements
 
@@ -110,11 +110,11 @@ A verbatim block is opened and closed with a line starting with ` ``` `.
 	```
 
 
-### Thematic Break
+### Thematic Breaks
 
-The line must consist of only `-` or `*` characters (at least two, in any combination) and spaces.
+The line must only consist of `-` and `*` characters (at least two) and spaces, in any combination.
 
-It may resemble a <dinkus https://en.wikipedia.org/wiki/Dinkus> or a horizontal line.
+By convention, it would resemble a <dinkus https://en.wikipedia.org/wiki/Dinkus> or a horizontal line.
 
 	- * -
 
@@ -187,6 +187,6 @@ Line breaks can also be escaped, emulating Markdown paragraphs.
 
 > This line has a hard line break that is not rendered.
 
-----
+---
 
 In memory of <Aaron Swartz https://www.youtube.com/watch?v=gpvcc9C8SbM> (<atx http://www.aaronsw.com/2002/atx/intro>).

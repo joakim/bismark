@@ -11,7 +11,7 @@ Differences from "flat" Bismark:
 		- Subheadings are achieved with indentation (no more than 3 levels recommended)
 	- A document _may_ have _one_ title, marked with `##`, which _must_ come before the first header
 
-----
+---
 
 # Inline elements
 	
@@ -98,11 +98,11 @@ Differences from "flat" Bismark:
 			¯\_(ツ)_/¯
 			```
 	
-	# Thematic Break
+	# Thematic Breaks
 		
-		The line must consist of only `-` or `*` characters (at least two, in any combination) and spaces.
+		The line must only consist of `-` and `*` characters (at least two) and spaces, in any combination.
 		
-		It may resemble a <dinkus https://en.wikipedia.org/wiki/Dinkus> or a horizontal line.
+		By convention, it would resemble a <dinkus https://en.wikipedia.org/wiki/Dinkus> or a horizontal line.
 		
 			- * -
 	
@@ -173,7 +173,7 @@ Differences from "flat" Bismark:
 		
 		> This line has a hard line break that is not rendered.
 
-----
+---
 
 In memory of <Aaron Swartz https://www.youtube.com/watch?v=gpvcc9C8SbM> (<atx http://www.aaronsw.com/2002/atx/intro>) and <Doug Engelbart https://dougengelbart.org/> (<Augment https://www.dougengelbart.org/hs/oad-2250-Authorship.html>).
 
