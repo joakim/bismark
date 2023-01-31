@@ -149,11 +149,11 @@ A monospaced block is opened and closed with ` ``` `.
 
 ### Thematic Break
 
-The line must consist of at least four dashes.
+The line must consist of only dashes (at least four) or asterisks.
 
 `---` is reserved for em-dash, `--` for en-dash.
 
-	----
+	***
 
 > ---
 
