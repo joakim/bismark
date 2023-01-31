@@ -113,9 +113,9 @@ Differences from "flat" Bismark:
 		Definitions are used for snippets, abbreviations, citations and notes.
 		
 		For snippets, the `key` must start with a `+`.
-		For abbreviations, prefix the `key` with a `?`.
+		For abbreviations, the `key` must start with a `?`.
 		For citations, the `key` must start with a `^`.
-		For notes, prefix the `key` with a `*`.
+		For notes, the `key` must start with a `*`.
 		
 		The `key` is case insensitive and can't contain spaces, `[` or `]`.
 		
