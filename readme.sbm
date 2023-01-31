@@ -9,11 +9,11 @@ Differences from "flat" Bismark:
 	- List items _must_ be indented with horizontal tabs
 	- There's only one header marker: `#`
 		- Subheadings are achieved with indentation (no more than 3 levels recommended)
-	- A document _may_ have _one_ title, marked with `##`, which _must_ come before the first header
+	- A document _may_ have one title, marked with `##`, which _must_ come before the first header
 
 ---
 
-# Inline elements
+# Inline Elements
 	
 	# Styling
 		
@@ -37,7 +37,7 @@ Differences from "flat" Bismark:
 			<Website https://example.com>
 			<Email address email@example.com>
 		
-		The destination is always the last part of the whitespace delimited link. The rest is the text.
+		The destination is always the last part of the whitespace delimited link. Anything before the destination is the text.
 	
 	# Checkboxes
 		
@@ -54,7 +54,7 @@ Differences from "flat" Bismark:
 			<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1]
 
 
-# Block elements
+# Block Elements
 	
 	# Heading
 		
@@ -64,7 +64,7 @@ Differences from "flat" Bismark:
 		
 		Paragraphs are separated by one or more blank lines.
 		
-		<Line breaks https://practicaltypography.com/hard-line-breaks.html> within paragraphs are retained unless <escaped #escaping>. Editors and views are expected to use <word wrap https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap>.
+		<Line breaks https://practicaltypography.com/hard-line-breaks.html> within paragraphs are retained unless <escaped #escaping>. Editors and views are expected to use <line and word wrap https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap>.
 		
 		Inline styles can span lines within the same paragraph.
 		
@@ -88,7 +88,7 @@ Differences from "flat" Bismark:
 		
 			> Why are you quoting everything I say?
 			
-			— Anonymous
+			--- Anonymous
 	
 	# Verbatim Blocks
 		
@@ -143,8 +143,6 @@ Differences from "flat" Bismark:
 			- Placeholders
 			- Corrections
 			- Exclusion from output
-		
-		Whether comments are rendered, and how, is up to the renderer.
 	
 	# Beautification
 		
@@ -185,7 +183,7 @@ Differences from "flat" Bismark:
 
 ---
 
-In memory of <Aaron Swartz https://www.youtube.com/watch?v=gpvcc9C8SbM> (<atx http://www.aaronsw.com/2002/atx/intro>) and <Doug Engelbart https://dougengelbart.org/> (<Augment https://www.dougengelbart.org/hs/oad-2250-Authorship.html>).
+In memory of <Aaron Swartz https://www.youtube.com/watch?v=gpvcc9C8SbM> (<atx http://www.aaronsw.com/2002/atx/intro>) and <Doug Engelbart https://dougengelbart.org/> (<Augment https://www.dougengelbart.org/hs/oad-2250-Authorship.html>). (Sorry, Ted!)
 
-[[image <Ted Nelson, Aaron Swartz and Doug Engelbart https://i0.wp.com/eekim.com/wp-content/uploads/sites/2/2013/01/ted_nelson-aaron_swartz-doug_engelbart.jpg>]]
+[image <Ted Nelson, Aaron Swartz and Doug Engelbart https://i0.wp.com/eekim.com/wp-content/uploads/sites/2/2013/01/ted_nelson-aaron_swartz-doug_engelbart.jpg>]
 Photo: <Eugene Eric Kim https://eekim.com/2013/01/aaron-swartz/>

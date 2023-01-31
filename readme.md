@@ -3,7 +3,7 @@
 A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language), suitable for both shorter and longer texts.
 
 - Simple
-- [Extensible](extras.md)
+- [Extensible](/extras.md)
 - Typographically sound
 
 Bismark is output format agnostic, and should be relatively easy to parse.
@@ -47,7 +47,7 @@ The link's text comes before its destination.
 > [Website](https://example.com)  
 > [Email address](mailto:email@example.com)  
 
-The destination is always the last part of the whitespace delimited link. The rest is the text.
+The destination is always the last part of the whitespace delimited link. Anything before the destination is the text.
 
 
 ### Checkboxes
@@ -62,6 +62,8 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 > - [x] Water the dog
 > - [ ] Feed the plants
 
+<sub>This example requires certain Markdown extensions to render correctly.</sub>
+
 
 ### References
 
@@ -71,7 +73,7 @@ A reference is an identifier enclosed in square brackets `[…]` that matches a 
 
 > [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1]
 
-<sub>Parts of this example is only visible with certain Markdown extensions.</sub>
+<sub>This example requires certain Markdown extensions to render correctly.</sub>
 
 
 ## Block Elements
@@ -95,7 +97,7 @@ There are [no more levels](https://practicaltypography.com/headings.html).
 
 Paragraphs are separated by one or more blank lines.
 
-[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). Editors and views are expected to use [word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
+[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). Editors and views are expected to use [line and word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
 
 Inline styles can span lines within the same paragraph.
 
@@ -129,7 +131,7 @@ A block quote line must start with a `>` character followed by whitespace.
 
 	> Why are you quoting everything I say?
 	
-	— Anonymous
+	--- Anonymous
 
 > > Why are you quoting everything I say?
 >

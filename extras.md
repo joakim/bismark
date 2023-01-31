@@ -5,18 +5,15 @@ A Bismark editor should show which extra features it supports. Either with its t
 For example:
 
 > **[Basic Bismark](/readme.md)**  
-> \+ [Inline styles](#inline-styles): Highlight, Superscript, Subscript  
-> \+ [Extensions](#extensions): Image, Table, Math  
-> \+ [Syntax highlighting](#syntax-highlighting): JavaScript, Python, Rebol  
-> \+ [Inline code](#inline-code): JavaScript  
-> \+ [Code blocks](#code-blocks): JavaScript, Python
+> \+ [Inline Styles](#inline-styles): Highlight, Superscript, Subscript  
+> \+ [Extensions](#extensions): Image, Table, TeX  
+> \+ [Syntax Highlighting](#syntax-highlighting): JavaScript, Python, Rebol  
+> \+ [Inline Code](#inline-code): JavaScript  
+> \+ [Code Blocks](#code-blocks): JavaScript, Python
 
 ---
 
-<sub>Some examples are only visible with Markdown extensions.</sub>
-
-
-### Inline styles
+### Inline Styles
 
 Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended with additional styles from a predetermined set.
 
@@ -37,9 +34,15 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 
 Bismark renderers can be extended by sub-renderers to provide additonal features.
 
-Enclosing a section of text in square brackets `[ … ]` tagged with the name of an extension, will cause it to be rendered by that extension.
+Enclosing a section of text in square brackets `[…]` prefixed with the name of an extension, will cause it to be rendered by that extension.
 
-Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. (Note how the image will fall back to a link in the example below.)
+Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. Note how the image will fall back to a link in the first example.
+
+#### Examples
+
+<sup>Some examples require certain Markdown extensions to render correctly.</sup>
+
+An image within a spoiler alert:
 
 	[spoiler
 	  [image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]
@@ -50,9 +53,7 @@ Which renderers are supported depend on the environment. If a renderer is not su
 >   <img title="A happy little quokka holding a twig" src="https://i.imgur.com/KLsmqqR.jpeg"/>
 > </details>
 
-Here are some more examples…
-
-Tables, using Markdown's syntax:
+Tables, using Markdown's table syntax:
 
 	[table
 	| Bismark    | Markdown                |
@@ -77,7 +78,7 @@ Markdown inside Bismark:
 > Because *why not!*
 
 
-### Syntax highlighting
+### Syntax Highlighting
 
 [Verbatim blocks](/readme.md#verbatim-blocks) may be syntax highlighted by specifying a supported language.
 
@@ -90,7 +91,7 @@ Markdown inside Bismark:
 > ```
 
 
-### Inline code
+### Inline Code
 
 Code enclosed in curly braces `{ … }` will be evaluated inline when rendered.
 
@@ -98,16 +99,14 @@ Code enclosed in curly braces `{ … }` will be evaluated inline when rendered.
 
 > The answer is… 42!
 
-Only one language can be supported at a time, to be specified by the renderer.
+Only one language can be supported at a time, to be specified by the renderer. While this is not very portable, it could be a powerful feature within an environment.
 
-This is not very portable, but within a certain environment, it could be very powerful.
-
-Because `{` and `}` often occur in programming languages, parsers must allow nested `{ … }` to reach the closing `}` of the inline code element. The code itself must not contain any non-matching `{` or `}`, including in strings or comments.
+Because `{` and `}` often occur in programming languages, parsers must allow nested `{…}` to reach the closing `}` of the inline code element. The code itself must not contain any non-matching `{` or `}`, including in strings or comments.
 
 
-### Code blocks
+### Code Blocks
 
-Code enclosed in two or more braces `{{ … }}` will be evaluated as a block when rendered.
+Code enclosed in two or more braces `{{…}}` will be evaluated as a block when rendered.
 
 A supported language may be specified, similar to syntax highlighted verbatim blocks and extensions.
 
@@ -117,7 +116,7 @@ A supported language may be specified, similar to syntax highlighted verbatim bl
 
 > 10
 
-For example, it could be used to create something like [Jupyter Notebook](https://jupyter.org/), with an interactive in-place editor and the result of the evaluation rendered directly below.
+For example, this could be used to create something like [Jupyter Notebook](https://jupyter.org/), with an interactive in-place editor and the result of the evaluation rendered directly below.
 
 	{{kesh
 	    a: 20

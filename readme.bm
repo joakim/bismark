@@ -3,7 +3,7 @@
 A <lightweight markup language https://en.wikipedia.org/wiki/Lightweight_markup_language>, suitable for both shorter and longer texts.
 
 - Simple
-- <Extensible extras.md>
+- <Extensible /extras.md>
 - Typographically sound
 
 Bismark is output format agnostic, and should be relatively easy to parse.
@@ -37,7 +37,7 @@ The link's text comes before its destination.
 	<Website https://example.com>
 	<Email address email@example.com>
 
-The destination is always the last part of the whitespace delimited link. The rest is the text.
+The destination is always the last part of the whitespace delimited link. Anything before the destination is the text.
 
 
 ### Checkboxes
@@ -73,7 +73,7 @@ There are <no more levels https://practicaltypography.com/headings.html>.
 
 Paragraphs are separated by one or more blank lines.
 
-<Line breaks https://practicaltypography.com/hard-line-breaks.html> within paragraphs are retained unless <escaped #escaping>. Editors and views are expected to use <word wrap https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap>.
+<Line breaks https://practicaltypography.com/hard-line-breaks.html> within paragraphs are retained unless <escaped #escaping>. Editors and views are expected to use <line and word wrap https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap>.
 
 Inline styles can span lines within the same paragraph.
 
@@ -98,7 +98,8 @@ Nested items must be indented, either with spaces (at least to the start of the 
 A block quote line must start with a `>` character followed by whitespace.
 
 	> Why are you quoting everything I say?
-	— Anonymous
+
+	--- Anonymous
 
 
 ### Verbatim Blocks
@@ -155,8 +156,6 @@ Uses cases include:
 - Placeholders
 - Corrections
 - Exclusion from output
-
-Whether comments are rendered, and how, is up to the renderer.
 
 
 ### Beautification
