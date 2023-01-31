@@ -98,11 +98,11 @@ Differences from "flat" Bismark:
 	
 	# Thematic Break
 		
-		The line must consist of at least four dashes.
+		The line must consist of only dashes (at least four) or asterisks.
 		
 		`---` is reserved for em-dash, `--` for en-dash.
 		
-			----
+			***
 	
 	# Definitions
 		
