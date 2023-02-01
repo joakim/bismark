@@ -6,7 +6,7 @@ Return to the essence of Markdown (ATX) and try again.
   Markdown reduced to its bare essentials. Then add generic syntax for extensions. All syntax should be as simple as possible, the syntax for extensions as flexible as possible.
 
 2. Strike a balance between [WYSIWYM](https://en.wikipedia.org/wiki/WYSIWYM) and [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG)  
-  Styling and other elements should ideally be rendered _as you type_, all the while displaying the markup characters. This gives an immediate visual feedback while allowing for continuous editing. Opened inline styles must automatically terminate at the end of the containing block element. Linebreaks should remain as linebreaks, unless escaped.
+  Styling and other elements should ideally be rendered _as you type_, all the while displaying the markup characters. This gives an immediate visual feedback while allowing for continuous editing. Opened inline styles must automatically terminate at the end of the containing element. Linebreaks should remain as linebreaks, unless escaped.
 3. Easy to parse, without backtracking  
   Required by #2. A good quality in of itself.
 
