@@ -180,12 +180,6 @@ Unintended formatting can be prevented with the escape character `\`.
 > \- This is not a list item.  
 > This -- is no longer an en-dash.
 
-By escaping a `-` within a word, it becomes a [soft hyphen](https://en.wikipedia.org/wiki/Soft_hyphen) for breaking up [long words](https://en.wikipedia.org/wiki/Donaudampfschiffahrtselektrizit%C3%A4tenhauptbetriebswerkbauunterbeamtengesellschaft) when line wrapping.
-
-	Ober\-donau\-dampf\-schiffahrts\-elektrizitäten\-haupt\-betriebs\-werk\-bau\-unter\-beamten\-gesellschaft\-haupt\-sitz\-eingangs\-bereich\-luft\-temperatur
-
-> Ober&shy;donau&shy;dampf&shy;schiffahrts&shy;elektrizitäten&shy;haupt&shy;betriebs&shy;werk&shy;bau&shy;unter&shy;beamten&shy;gesellschaft&shy;haupt&shy;sitz&shy;eingangs&shy;bereich&shy;luft&shy;temperatur
-
 By escaping a space, it becomes a [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space).
 
 	This number and its unit must never be broken up by line wrapping: 100\ km
