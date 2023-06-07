@@ -131,12 +131,16 @@ Differences from "flat" Bismark:
 		
 			This number and its unit must never be broken up by line wrapping: 100\ km
 		
+		Similarly, by escaping a hyphen, it becomes a <non-breaking hyphen https://en.wikipedia.org/wiki/Non-breaking_hyphen>.
+		
+			The next hyphen is non\-breaking
+		
 		By escaping a line break, it's possible to emulate Markdown paragraphs.
 		
 			This line has a hard line break \
-			that is escaped.
+			that is ignored.
 		
-		> This line has a hard line break that is escaped.
+		> This line has a hard line break that is ignored.
 
 ---
 
