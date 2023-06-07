@@ -103,7 +103,7 @@ Inline styles can span lines within the same paragraph.
 
 Either ordered or unordered.
 
-Nested items must be indented, either with spaces (at least to the start of the outer item's text) or with tabs (one for each indentation level).
+Nested items must be indented, either with spaces (at least to the leftmost column of the outer item's text) or with tabs (one for each indentation level).
 
 	1. Ordered item
 	   - Unordered item
