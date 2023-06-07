@@ -180,17 +180,17 @@ Unintended formatting can be prevented with the escape character `\`.
 > \- This is not a list item.  
 > This -- is no longer an en-dash.
 
+By escaping a hyphen within a word, it becomes a [non-breaking hyphen](https://en.wikipedia.org/wiki/Non-breaking_hyphen).
+
+	The next hyphen is non\-breaking.
+
+> The next hyphen is non&#x2011;breaking.
+
 By escaping a space, it becomes a [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space).
 
 	This number and its unit must never be broken up by line wrapping: 100\ km
 
 > This number and its unit must never be broken up by line wrapping: 100&nbsp;km
-
-Similarly, by escaping a hyphen, it becomes a [non-breaking hyphen](https://en.wikipedia.org/wiki/Non-breaking_hyphen).
-
-	The next hyphen is non\-breaking
-
-> The next hyphen is non-breaking
 
 By escaping a line break, it's possible to emulate Markdown paragraphs.
 
@@ -198,6 +198,12 @@ By escaping a line break, it's possible to emulate Markdown paragraphs.
 	that is ignored.
 
 > This line has a hard line break that is ignored.
+
+Any Unicode character may be specified using the escape sequence `\(…)`.
+
+	Nice \(1F44D)
+
+> Nice 👍
 
 ---
 
