@@ -3,8 +3,8 @@
 A <lightweight markup language https://en.wikipedia.org/wiki/Lightweight_markup_language>, suitable for both shorter and longer texts.
 
 - Simple
-- <Extensible /extras.md>
 - Typographically sound
+- <Extensible /extras.md>
 
 Bismark is output format agnostic, and should be relatively easy to parse.
 
@@ -37,7 +37,7 @@ The link's text comes before its destination.
 	<Website https://example.com>
 	<Email address email@example.com>
 
-The destination is always the last part of the whitespace delimited link. Anything before the destination is the text.
+The destination is always the last part of the whitespace delimited link. Anything before the destination is the link's text.
 
 
 ### Checkboxes
@@ -47,13 +47,6 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 	Todo:
 	[x] Water the dog
 	[ ] Feed the plants
-
-
-### References
-
-A reference is a key enclosed in square brackets `[…]` that matches a <definition #definitions>.
-
-	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1][*a]
 
 
 ## Block elements
@@ -120,46 +113,7 @@ By convention, it would resemble a <dinkus https://en.wikipedia.org/wiki/Dinkus>
 	- * -
 
 
-### Definitions
-
-Definitions have the syntax `[key]: value` and are <referenced #references> using `[key]`.
-
-Definitions are used for snippets, abbreviations, citations and notes.
-
-For snippets, the `key` must start with a `+`.
-For abbreviations, the `key` must start with a `?`.
-For citations, the `key` must start with a `^`.
-For notes, the `key` must start with a `*`.
-
-The `key` is case insensitive and can't contain spaces, `[` or `]`.
-
-	[+wikipedia]: http://en.wikipedia.org/wiki/
-	[?SQL]: Structured Query Language
-	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
-	[*a]: In fact, many still pronounce it "sequel".
-
-Square brackets are also used by <checkboxes #checkboxes>, <comments #comments> and <extensions /extras.md#extensions>.
-
-
 ## Other
-
-### Comments
-
-Comments are enclosed in square brackets that start with and optionally end with `-`.
-
-	[- A comment for future reference -]
-
-	[-
-	This is a _block_ comment.
-	-]
-
-Uses cases include:
-- Notes to self
-- Placeholders
-- Corrections
-- Exclusion from output
-[- Commenting out a list item]
-
 
 ### Beautification
 

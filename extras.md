@@ -1,15 +1,21 @@
 # Extras
 
-A Bismark editor should show which extra features it supports. Either with its toolbar or in a popover.
+Note: This is all very experimental.
+
+A Bismark editor should clearly show which extra features it supports. Either within its toolbar or in a popover.
 
 For example:
 
 > **[Basic Bismark](/readme.md)**  
 > \+ [Inline Styles](#inline-styles): Highlight, Superscript, Subscript  
+> \+ [References](#references): Citations, Notes  
+> \+ [Comments](#comments)  
 > \+ [Extensions](#extensions): Image, Table, TeX  
-> \+ [Syntax Highlighting](#syntax-highlighting): JavaScript, Python, Rebol  
+> \+ [Syntax Highlighting](#syntax-highlighting): JavaScript, Clojure, Rebol  
 > \+ [Inline Code](#inline-code): JavaScript  
-> \+ [Code Blocks](#code-blocks): JavaScript, Python
+> \+ [Code Blocks](#code-blocks): JavaScript, Clojure
+
+<sup>Some examples on this page require certain Markdown extensions to render correctly.</sup>
 
 ---
 
@@ -30,6 +36,52 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 > <sub>subscript</sub>
 
 
+### References
+
+A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
+
+	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1][*a]
+
+> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
+
+
+#### Definitions
+
+Definitions have the syntax `[key]: value` and are [referenced](#references) using `[key]`.
+
+Definitions are used for snippets, abbreviations, citations and notes.
+
+For snippets, the `key` must start with a `+`.  
+For abbreviations, the `key` must start with a `?`.  
+For citations, the `key` must start with a `^`.  
+For notes, the `key` must start with a `*`.
+
+The `key` is case insensitive and can't contain spaces, `[` or `]`.
+
+	[+wikipedia]: http://en.wikipedia.org/wiki/
+	[?SQL]: Structured Query Language
+	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
+	[*a]: In fact, many still pronounce it "sequel".
+
+
+### Comments
+
+Comments are enclosed in square brackets that start with and optionally end with `-`.
+
+	[- A comment for future reference -]
+
+	[-
+	This is a _block_ comment.
+	-]
+
+Uses cases include:
+
+- Notes to self
+- Placeholders
+- Corrections
+- Exclusion from output
+
+
 ### Extensions
 
 Bismark renderers can be extended by sub-renderers to provide additonal features.
@@ -39,8 +91,6 @@ Enclosing a section of text in square brackets `[…]` prefixed with the name of
 Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. Note how the image will fall back to a link in the first example.
 
 #### Examples
-
-<sup>Some examples require certain Markdown extensions to render correctly.</sup>
 
 An image within a spoiler alert:
 
@@ -136,3 +186,8 @@ For example, this could be used to create something like [Jupyter Notebook](http
 > a + b
 > ```
 > > 42
+
+---
+
+[^1]: D.D. Chamberlin, [Oral history interview with Donald D. Chamberlin](https://hdl.handle.net/11299/107215) (Charles Babbage Institute, 2001).  
+[^a]: In fact, many still pronounce it "sequel".
