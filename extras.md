@@ -63,6 +63,8 @@ The `key` is case insensitive and can't contain spaces, `[` or `]`.
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
 
+`[*]` is a valid note reference, as is `[**]` and `[***]`.
+
 
 ### Comments
 
