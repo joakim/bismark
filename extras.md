@@ -165,34 +165,6 @@ Only one language can be supported at a time, to be specified by the renderer. W
 
 Because `{` and `}` often occur in programming languages, parsers must allow nested `{…}` to reach the closing `}` of the inline code element. The code itself must not contain any non-matching `{` or `}`, including in strings or comments.
 
-
-### Code Blocks
-
-Code enclosed in two or more braces `{{…}}` will be evaluated as a block when rendered.
-
-A supported language may be specified, similar to syntax highlighted verbatim blocks and extensions.
-
-	{{js
-	  [1, 2, 3, 4].reduce((acc, num) => acc + num, 0)
-	}}
-
-> 10
-
-For example, this could be used to create something like [Jupyter Notebook](https://jupyter.org/), with an interactive in-place editor and the result of the evaluation rendered directly below.
-
-	{{kesh
-	    a: 20
-	    b: 22
-	    a + b
-	}}
-
-> ```
-> a: 20
-> b: 22
-> a + b
-> ```
-> > 42
-
 ---
 
 [^1]: D.D. Chamberlin, [Oral history interview with Donald D. Chamberlin](https://hdl.handle.net/11299/107215) (Charles Babbage Institute, 2001).  
