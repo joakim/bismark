@@ -192,14 +192,14 @@ By escaping a space, it becomes a [non-breaking space](https://en.wikipedia.org/
 
 > This number and its unit must never be broken up by line wrapping: 100&nbsp;km
 
-By escaping a line break, it's possible to emulate Markdown paragraphs.
+By escaping a line break, it becomes a [non-breaking line break](https://daringfireball.net/projects/markdown/syntax#p) ala Markdown.
 
 	This line has a hard line break \
 	that is ignored.
 
 > This line has a hard line break that is ignored.
 
-Any Unicode character may be specified using the escape sequence `\(…)`.
+Any Unicode character may be added using the escape sequence `\(…)` with the character's hexadecimal Unicode code point.
 
 	Nice \(1F44D)
 
