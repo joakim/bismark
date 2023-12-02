@@ -40,7 +40,7 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 
 A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	<According to Wikipedia [+wikipedia]/SQL>, [?SQL] was originally called SEQUEL.[^1][*a]
+	<According to Wikipedia [wikipedia SQL]>, [?SQL] was originally called SEQUEL.[^1][*a]
 
 > [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
 
@@ -49,21 +49,25 @@ A reference is a key enclosed in square brackets `[…]` that matches a [definit
 
 Definitions have the syntax `[key]: value` and are [referenced](#references) using `[key]`.
 
-Definitions are used for snippets, abbreviations, citations and notes.
+Definitions are used for abbreviations, citations, notes and snippets.
 
-For snippets, the `key` must start with a `+`.  
-For abbreviations, the `key` must start with a `?`.  
-For citations, the `key` must start with a `^`.  
-For notes, the `key` must start with a `*`.
+If the `key` starts with a `?`, it's an abbreviation.  
+If the `key` starts with a `^`, it's a citation.  
+If the `key` starts with a `*`, it's a note.  
+Otherwise, it's a snippet/template.
 
-The `key` is case insensitive and can't contain spaces, `[` or `]`.
+A snippet becomes a template if one or more variables are specified in curly brackets `{…}` after the key, separated by space.
 
-	[+wikipedia]: http://en.wikipedia.org/wiki/
+The `key` is case insensitive and can't start with `-` or contain spaces, `[` or `]`.
+
+`[*]` is a valid note reference, as is `[**]` and `[***]`.
+
 	[?SQL]: Structured Query Language
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
+	[wikipedia {title}]: http://en.wikipedia.org/wiki/{title}
 
-`[*]` is a valid note reference, as is `[**]` and `[***]`.
+Definitions take precedence over extensions.
 
 
 ### Comments
