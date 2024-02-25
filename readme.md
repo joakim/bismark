@@ -101,7 +101,7 @@ Inline styles can span lines within the same paragraph.
 
 ### Lists
 
-Items are either ordered or unordered. Unordered items use either a `-` dash or `•` bullet.
+Items are either ordered or unordered. Unordered items are prefixed with a `-` dash or a `•` bullet.
 
 Nested items must be indented, either with spaces (at least to the leftmost column of the outer item's text) or with tabs (one for each indentation level).
 
