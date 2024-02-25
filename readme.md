@@ -199,7 +199,7 @@ By escaping a line break, it becomes a [non-breaking line break](https://daringf
 
 > This line has a hard line break that is ignored.
 
-Unicode characters may be added using the escape sequence `\HHHHHH` with the character's Unicode code point in a zero-padded 6-digit hexadecimal.
+Unicode characters may be added using the escape sequence `\HHHHHH` with a zero-padded 6-digit hexadecimal Unicode code point.
 
 	Nice \01F44D
 
