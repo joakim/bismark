@@ -40,7 +40,7 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 
 A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	<According to Wikipedia [wikipedia SQL]>, [?SQL] was originally called SEQUEL.[^1][*a]
+	<According to Wikipedia [wiki en SQL]>, [?SQL] was originally called SEQUEL.[^1][*a]
 
 > [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
 
@@ -56,16 +56,16 @@ If the `key` starts with a `^`, it's a citation.
 If the `key` starts with a `*`, it's a note.  
 Otherwise, it's a snippet/template.
 
-A snippet becomes a template if one or more variables are specified in curly brackets `{…}` after the key, separated by space.
+A snippet becomes a template if one or more variable names are specified in curly brackets `{…}` after the key, separated by space. A variable name suffixed by `...` gobbles up all text, including whitespace, until `]` is encountered. Variable names are referenced within the template using curly brackets `{…}`.
 
-The `key` is case insensitive and can't start with `-` or contain spaces, `[` or `]`.
+The `key` and any variables are case insensitive and can't start with `-` or contain spaces, `[` or `]`.
 
-`[*]` is a valid note reference, as is `[**]` and `[***]`.
+`[*]` is a valid note reference, as is `[**]`, `[***]`, etc.
 
 	[?SQL]: Structured Query Language
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
-	[wikipedia {title}]: http://en.wikipedia.org/wiki/{title}
+	[wiki {lang} {title...}]: http://{lang}.wikipedia.org/wiki/{title}
 
 Definitions take precedence over extensions.
 
@@ -163,7 +163,7 @@ Code enclosed in curly braces `{…}` will be evaluated inline when rendered.
 
 Only one language can be supported at a time, to be specified by the renderer. While this is not very portable, it could be a powerful feature within an environment.
 
-Because `{` and `}` often occur in programming languages, parsers must allow nested `{…}` to reach the closing `}` of the inline code element. The code itself must not contain any non-matching `{` or `}`, including in strings or comments.
+Because `{` and `}` often occur in programming languages, parsers must track nested `{…}` to reach the closing `}` of the inline code element.
 
 ---
 
