@@ -65,7 +65,7 @@ The `key` and any variables are case insensitive and can't start with `-` or con
 	[?SQL]: Structured Query Language
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
-	[wiki {lang} {title}]: http://{lang}.wikipedia.org/wiki/{title}
+	[wiki {lang} {title}]: https://{lang}.wikipedia.org/wiki/{title}
 
 Definitions take precedence over extensions.
 
