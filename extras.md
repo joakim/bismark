@@ -56,7 +56,7 @@ If the `key` starts with a `^`, it's a citation.
 If the `key` starts with a `*`, it's a note.  
 Otherwise, it's a snippet/template.
 
-A snippet becomes a template if one or more variable names are specified in curly brackets `{…}` after the key, separated by space. A variable name suffixed by `...` gobbles up all text, including whitespace, until `]` is encountered. Variable names are referenced within the template using curly brackets `{…}`.
+A snippet becomes a template if one or more variable names are specified in curly brackets `{…}` after the key, separated by space. The last variable name consumes any remaining text, including whitespace, until `]` is encountered. Variable names are referenced within the template using curly brackets `{…}`.
 
 The `key` and any variables are case insensitive and can't start with `-` or contain spaces, `[` or `]`.
 
@@ -65,7 +65,7 @@ The `key` and any variables are case insensitive and can't start with `-` or con
 	[?SQL]: Structured Query Language
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
-	[wiki {lang} {title...}]: http://{lang}.wikipedia.org/wiki/{title}
+	[wiki {lang} {title}]: http://{lang}.wikipedia.org/wiki/{title}
 
 Definitions take precedence over extensions.
 
