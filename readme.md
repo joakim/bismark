@@ -151,9 +151,7 @@ By convention, it would resemble a [dinkus](https://en.wikipedia.org/wiki/Dinkus
 > ---
 
 
-## Other
-
-### Escaping
+## Escaping
 
 Unintended formatting can be prevented with the escape character `\`.
 
