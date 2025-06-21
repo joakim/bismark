@@ -62,18 +62,18 @@ A reference is a key enclosed in square brackets `[…]` that matches a [definit
 
 #### Definitions
 
-Definitions have the syntax `[key]: value` and are [referenced](#references) using `[key]`.
+Definitions are used for abbreviations, citations, notes, snippets and templates.
 
-Definitions are used for abbreviations, citations, notes and snippets.
+Definitions have the syntax `[key]: value` and are [referenced](#references) using `[key]`.
 
 If the `key` starts with a `?`, it's an abbreviation.  
 If the `key` starts with a `^`, it's a citation.  
 If the `key` starts with a `*`, it's a note.  
-Otherwise, it's a snippet/template.
+Otherwise, it's a snippet.  
 
-A snippet becomes a template if one or more variable names are specified in curly brackets `{…}` after the key, separated by space. The last variable name consumes any remaining text, including whitespace, until `]` is encountered. Variable names are referenced within the template using curly brackets `{…}`.
+If the snippet's key is followed by space and one or more variable names, specified in curly brackets `{…}` and separated by space, it's a template. The last variable name consumes any remaining text, including whitespace, until `]` is encountered. Variable names are referenced within the template using curly brackets `{…}`.
 
-The `key` and any variables are case insensitive and can't start with `-` or contain spaces, `[` or `]`.
+The `key` and any variables are case insensitive and cannot start with `-` or contain spaces, `[` or `]`.
 
 `[*]` is a valid note reference, as is `[**]`, `[***]`, etc.
 
@@ -166,19 +166,19 @@ Markdown inside Bismark:
 
 ### Inline Code
 
-Code enclosed in curly braces `{…}` will be evaluated inline when rendered.
+Code enclosed in double curly braces `{{…}}` will be evaluated inline when rendered.
 
-	The answer is... { 2 * 3 * 7 }!
+	The answer is... {{ 2 * 3 * 7 }}!
 	
-	Last updated: { Temporal.Now.plainDateTimeISO().toLocaleString('se') }
+	Last updated: {{ Temporal.Now.plainDateTimeISO().toLocaleString('se') }}
 
 > The answer is… 42!
 > 
-> Last updated: 2023-01-31 14:27:01
+> Last updated: 2025-06-20 16:16:59
 
 Only one language can be supported at a time, to be specified by the renderer. While this is not very portable, it could be a powerful feature within an environment.
 
-Because `{` and `}` often occur in programming languages, parsers must track nested `{…}` to reach the closing `}` of the inline code element.
+Because `{{` and `}}` may occur in programming languages, parsers must track nested `{{…}}` to reach the closing `}}` of the inline code element.
 
 ---
 
