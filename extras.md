@@ -7,17 +7,32 @@ A Bismark editor should clearly show which extra features it supports. Either wi
 For example:
 
 > **[Basic Bismark](/readme.md)**  
+> \+ [Beautification](#beautification): Ellipsis, En-dash, Em-dash, Smart quotes  
 > \+ [Inline Styles](#inline-styles): Highlight, Superscript, Subscript  
 > \+ [References](#references): Citations, Notes  
 > \+ [Comments](#comments)  
 > \+ [Extensions](#extensions): Image, Table, TeX  
 > \+ [Syntax Highlighting](#syntax-highlighting): JavaScript, Clojure, Rebol  
 > \+ [Inline Code](#inline-code): JavaScript  
-> \+ [Code Blocks](#code-blocks): JavaScript, Clojure
 
 <sup>Some examples on this page require certain Markdown extensions to render correctly.</sup>
 
 ---
+
+### Beautification
+
+Because [typography matters](https://practicaltypography.com/).
+
+	... is an ellipsis
+	-- is an en-dash
+	--- is an em-dash
+
+> … is an ellipsis  
+> – is an en-dash  
+> — is an em-dash  
+
+“Smart quotes” may be provided as an option by the renderer.
+
 
 ### Inline Styles
 
