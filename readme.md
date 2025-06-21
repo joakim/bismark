@@ -153,32 +153,15 @@ By convention, it would resemble a [dinkus](https://en.wikipedia.org/wiki/Dinkus
 
 ## Other
 
-### Beautification
-
-Because [typography matters](https://practicaltypography.com/).
-
-	... is an ellipsis
-	-- is an en-dash
-	--- is an em-dash
-
-> … is an ellipsis  
-> – is an en-dash  
-> — is an em-dash  
-
-“Smart quotes” may be provided as an option by the renderer.
-
-
 ### Escaping
 
 Unintended formatting can be prevented with the escape character `\`.
 
 	The asterisk (\*) and backslash (\\) are fine symbols indeed.
 	\- This is not a list item.
-	This \-- is no longer an en-dash.
 
 > The asterisk (\*) and backslash (\\) are fine symbols indeed.  
 > \- This is not a list item.  
-> This -- is no longer an en-dash.
 
 By escaping a hyphen within a word, it becomes a [non-breaking hyphen](https://en.wikipedia.org/wiki/Non-breaking_hyphen).
 
