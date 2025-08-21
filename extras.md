@@ -55,9 +55,9 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 
 A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	<According to Wikipedia [wiki en SQL]>, [?SQL] was originally called SEQUEL.[^1][*a]
+	According to Wikipedia's article on [wiki en Structured Query Language], [?SQL] was originally called SEQUEL.[^1][*a]
 
-> [According to Wikipedia](https://en.wikipedia.org/wiki/SQL), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
+> According to Wikipedia's article on [Structured Query Language](https://en.wikipedia.org/wiki/Structured%20Query%20Language), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
 
 
 #### Definitions
