@@ -6,9 +6,9 @@ A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup
 - Typographically sound
 - [Extensible](/extras.md)
 
-Bismark is output format agnostic, and should be relatively easy to parse.
+Bismark is output format agnostic, and is intended to be relatively easy to parse.
 
-It is still in flux and is subject to change. Feedback is welcome.
+It is still in flux and is subject to change. Feedback is always welcome.
 
 --- 
 
@@ -86,9 +86,9 @@ There are [no more levels](https://practicaltypography.com/headings.html).
 
 Paragraphs are separated by one or more blank lines.
 
-[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). Editors and views are expected to use [line and word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
+[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). In other words, opposite of what Markdown does. Editors and views are expected to use [line and word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
 
-Inline styles can span lines within the same paragraph.
+Inline styles can span multiple lines within the same paragraph. The end of a paragraph terminates any unterminated inline styles.
 
 	The most dangerous thought you can have
 	as a creative person is to *think you know
