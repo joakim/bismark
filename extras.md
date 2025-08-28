@@ -55,9 +55,9 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 
 A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
 
-	According to Wikipedia's article on [wiki en Structured Query Language], [?SQL] was originally called SEQUEL.[^1][*a]
+	According to <Wikipedia [wikipedia]>'s article on [wiki en Structured Query Language], [?SQL] was originally called SEQUEL.[^1][*a]
 
-> According to Wikipedia's article on [Structured Query Language](https://en.wikipedia.org/wiki/Structured%20Query%20Language), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
+> According to <a href="https://www.wikipedia.org/">Wikipedia</a>'s article on [Structured Query Language](https://en.wikipedia.org/wiki/Structured%20Query%20Language), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
 
 
 #### Definitions
@@ -80,6 +80,7 @@ The `key` and any variables are case insensitive and cannot start with `-` or co
 	[?SQL]: Structured Query Language
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
+    [Wikipedia]: https://www.wikipedia.org/
 	[wiki {lang} {title}]: <{title} https://{lang}.wikipedia.org/wiki/{title}>
 
 Definitions take precedence over extensions.
