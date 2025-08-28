@@ -1,6 +1,6 @@
 # Extras
 
-Note: This is all very experimental.
+Note: This is a draft.
 
 A Bismark editor should clearly show which extra features it supports. Either within its toolbar or in a popover.
 
