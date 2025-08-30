@@ -81,7 +81,7 @@ Links may be constructed from definitions, where the reference's text matches a 
 > [Wikipedia](https://wikipedia.org/)  
 > [X](https://x.com/)
 
-Links may also be composed using snippets.
+Links can also be composed using snippets.
 
     <X [twitter]>
 
