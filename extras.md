@@ -64,7 +64,7 @@ A reference is an inline element whose text, enclosed in square brackets `[…]`
 
 Definitions are used for abbreviations, citations, notes, snippets and links.
 
-Definitions have the syntax `[key …]: value` and are [referenced](#references) using `[key …]`.
+A definition is a line with the syntax `[key …]: value`. It may be [referenced](#references) anywhere in the source, except in definitions, using `[key …]`.
 
 If the `key` starts with a `?`, it's an abbreviation.  
 If the `key` starts with a `^`, it's a citation.  
