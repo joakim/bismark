@@ -2,17 +2,15 @@
 
 Note: This is a draft.
 
-A Bismark editor should clearly show which extra features it supports. Either within its toolbar or in a popover.
-
-For example:
+A Bismark editor should clearly communicate which extra features it supports beyond Basic Bismark. This could be as buttons in its toolbar or as a popover.
 
 > **[Basic Bismark](/readme.md)**  
 > \+ [Beautification](#beautification): Ellipsis, En-dash, Em-dash, Smart quotes  
 > \+ [Inline Styles](#inline-styles): Highlight, Superscript, Subscript  
-> \+ [References](#references): Citations, Notes  
+> \+ [References](#references): Citations, Notes, Links  
 > \+ [Comments](#comments)  
 > \+ [Extensions](#extensions): Image, Table, TeX  
-> \+ [Syntax Highlighting](#syntax-highlighting): JavaScript, Clojure, Rebol  
+> \+ [Syntax Highlighting](#syntax-highlighting): Clojure, JavaScript, Python  
 > \+ [Inline Code](#inline-code): JavaScript  
 
 <sup>Some examples on this page require certain Markdown extensions to render correctly.</sup>
@@ -53,35 +51,50 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 
 ### References
 
-A reference is a key enclosed in square brackets `[…]` that matches a [definition](#definitions).
+A reference is an inline element whose text, enclosed in square brackets `[…]`, matches a [definition](#definitions).
 
-	According to <Wikipedia [wikipedia]>'s article on [wiki en Structured Query Language], [?SQL] was originally called SEQUEL.[^1][*a]
+	According to [Wikipedia]<>'s article on [wiki en Structured Query Language], [?SQL] was originally called SEQUEL.[^1][*a]
 
 > According to <a href="https://www.wikipedia.org/">Wikipedia</a>'s article on [Structured Query Language](https://en.wikipedia.org/wiki/Structured%20Query%20Language), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
 
 
 #### Definitions
 
-Definitions are used for abbreviations, citations, notes, snippets and templates.
+Definitions are used for abbreviations, citations, notes, snippets and links.
 
-Definitions have the syntax `[key]: value` and are [referenced](#references) using `[key]`.
+Definitions have the syntax `[key …]: value` and are [referenced](#references) using `[key …]`.
 
 If the `key` starts with a `?`, it's an abbreviation.  
 If the `key` starts with a `^`, it's a citation.  
 If the `key` starts with a `*`, it's a note.  
-Otherwise, it's a snippet.  
+Otherwise, it's a snippet or a link.  
 
-If the snippet's key is followed by space and one or more variable names, specified in curly brackets `{…}` and separated by space, it's a template. The last variable name consumes any remaining text, including whitespace, until `]` is encountered. Variable names are referenced within the template using curly brackets `{…}`.
+If the snippet's key is followed by a space and one or more variables, specified in curly brackets `{…}` and separated by space, it's a template. The last variable consumes any remaining text of the reference, including whitespace, until `]` is encountered. Captured variables are referenced within the template using curly brackets `{…}`.
 
-The `key` and any variables are case insensitive and cannot start with `-` or contain spaces, `[` or `]`.
+Links may be constructed from definitions, where the reference text matches a definition and is immediately followed by `<>`. The link's text may be specified within the angle brackets, otherwise the reference's text is used.
+
+	[Wikipedia]<>
+    [Twitter]<X>
+
+> [Wikipedia](https://wikipedia.org/)  
+> [X](https://x.com/)
+
+Links may also be composed using snippets.
+
+    <X [twitter]>
+
+> [X](https://x.com/)
+
+Definitions are case insensitive and cannot start with `-` or contain `[` or `]`. `[x]` and `[ ]` are reserved for checkboxes.
 
 `[*]` is a valid note reference, as is `[**]`, `[***]`, etc.
 
 	[?SQL]: Structured Query Language
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
-    [Wikipedia]: https://www.wikipedia.org/
 	[wiki {lang} {title}]: <{title} https://{lang}.wikipedia.org/wiki/{title}>
+    [wikipedia]: https://www.wikipedia.org/
+	[twitter]: https://x.com/
 
 Definitions take precedence over extensions.
 
@@ -90,7 +103,7 @@ Definitions take precedence over extensions.
 
 Comments are enclosed in square brackets that start with and optionally end with `-`.
 
-	[- A comment for future reference -]
+	[- An inline comment for future reference -]
 
 	[-
 	This is a _block_ comment.
@@ -112,9 +125,11 @@ Enclosing a section of text in square brackets `[…]` prefixed with the name of
 
 Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. Note how the image will fall back to a link in the first example.
 
+Extension elements are always block elements.
+
 #### Examples
 
-An image within a spoiler alert:
+An image within a spoiler/disclosure element:
 
 	[spoiler
 	  [image <A happy little quokka holding a twig https://i.imgur.com/KLsmqqR.jpeg>]
@@ -147,16 +162,18 @@ Math formulas, assuming the environment supports TeX:
 
 Markdown inside Bismark:
 
-	Because [md *why not!* ]
+	[md *why not!* ]
 
-> Because *why not!*
+> *why not!*
+
+(Actually, that's a bad idea…)
 
 
 ### Syntax Highlighting
 
 [Verbatim blocks](/readme.md#verbatim-blocks) may be syntax highlighted by specifying a supported language.
 
-	```rebol
+	``` rebol
 	print "Hello, world!"
 	```
 
@@ -177,7 +194,7 @@ Code enclosed in double curly braces `{{…}}` will be evaluated inline when ren
 > 
 > Last updated: 2025-06-20 16:16:59
 
-Only one language can be supported at a time, to be specified by the renderer. While this is not very portable, it could be a powerful feature within an environment.
+Only one language may be supported at a time, to be specified by the renderer. While this is not very portable, it can be a powerful feature within a particular environment.
 
 Because `{{` and `}}` may occur in programming languages, parsers must track nested `{{…}}` to reach the closing `}}` of the inline code element.
 
