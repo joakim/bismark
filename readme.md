@@ -119,7 +119,7 @@ Leading and trailing whitespace may be ignored by renderers.
 
 ### Lists
 
-A list consists of either ordered or unordered list items.
+A list consists of either ordered or unordered list items. Lists may be nested.
 
 	1. First ordered item
     2. Second ordered item
