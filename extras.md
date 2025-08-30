@@ -73,7 +73,7 @@ Otherwise, it's a snippet or a link.
 
 If the snippet's key is followed by a space and one or more variables, specified in curly brackets `{…}` and separated by space, it's a template. The last variable consumes any remaining text of the reference, including whitespace, until `]` is encountered. Captured variables are referenced within the template using curly brackets `{…}`.
 
-Links may be constructed from definitions, where the reference text matches a definition and is immediately followed by `<>`. The link's text may be specified within the angle brackets, otherwise the reference's text is used.
+Links may be constructed from definitions, where the reference's text matches a definition and is immediately followed by `<>`. The link's text may be specified within the angle brackets, otherwise the reference's text is used.
 
 	[Wikipedia]<>
     [Twitter]<X>
