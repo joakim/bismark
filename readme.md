@@ -135,7 +135,7 @@ A list consists of either ordered or unordered list items.
 
 <details>
 
-Ordered list items are numbered, followed by either a dot (`.`) or a closing parenthesis (`)`), followed by a space. Only the first list item's number is used as the start number of the list, if supported by the renderer, any numbers of the remaining list items are ignored.
+Ordered list items are numbered, followed by either a dot (`.`) or a closing parenthesis (`)`), followed by a space. Only the first list item's number is used as the start number of the list, if supported by the renderer, the numbers of any subsequent list items are ignored.
 
 Unordered list items are prefixed with either a bullet (`•`), an asterisk (`*`) or a hyphen (`-`), followed by a space.
 
