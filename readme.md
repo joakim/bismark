@@ -26,11 +26,15 @@ It is still in flux and is subject to change. Feedback is always welcome.
 
 There's [no underline](https://practicaltypography.com/underlining.html).
 
+<details>
+
 Emphasis (bold and italic) may be nested. The element's contained text cannot begin or end with whitespace.
 
 Verbatim text may be enclosed by multiple consecutive backtick characters (``` ` ```), the opening and closing delimiters having the same length. If the outer characters of either end of the contained text is a backtick and a space, seen from the inside and out, a single space is removed from that end.
 
 By convention, verbatim text is rendered in a monospaced font.
+
+</details>
 
 
 ### Links
@@ -51,7 +55,11 @@ The link's text comes before its destination.
 > [Website](https://example.com)  
 > [Email address](mailto:email@example.com)  
 
+<details>
+
 The destination is always the last part of the space delimited link. Anything before the destination is the link's text.
+
+</details>
 
 
 ### Checkboxes
@@ -88,39 +96,63 @@ There are [no more levels](https://practicaltypography.com/headings.html).
 
 ### Paragraphs
 
-Paragraphs are separated by one or more blank lines.
-
-[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). In other words, opposite of what Markdown does. It's the 21st century, editors and renderers are expected to use [line and word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
-
-Inline styles and links can span multiple lines within the same paragraph.
+Paragraphs are separated by one or more blank lines, line breaks are retained.
 
 	The most dangerous thought you can have
-	as a creative person is to *think you know
-	what you're doing*.
+	as a creative person is to _think you know
+	what you're doing_.
 
 > The most dangerous thought you can have  
-> as a creative person is to **think you know  
-> what you're doing**.
+> as a creative person is to *think you know  
+> what you're doing*.
+
+<details>
+
+[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). In other words, the opposite of what Markdown does. It's the 21st century, editors and renderers can be expected to use [line and word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
+
+Inline styles and links can span multiple lines within a paragraph.
+
+Leading and trailing whitespace may be ignored by renderers.
+
+</details>
 
 
 ### Lists
 
-Items are either ordered or unordered. Unordered items are prefixed with a bullet (`•`), an asterisk (`*`) or a hyphen (`-`), followed by a space.
+A list consists of either ordered or unordered list items.
 
-Nested items are indented either with spaces (at least to the leftmost column of the outer item's text) or tabs (one for each indentation level).
-
-	1. Ordered item
+	1. First ordered item
+    2. Second ordered item
 	   • Unordered bullet item
-	     - Unordered dash item
+	     - Unordered item
+	       taking up two lines
 
-> 1. Ordered item  
->    * Unordered bullet item  
->      - Unordered dash item
+> 1. First ordered item
+> 2. Second ordered item
+>    * Unordered bullet item
+>      - Unordered item\
+>        taking up two lines
+
+<details>
+
+Ordered list items are numbered, followed by either a dot (`.`) or a closing parenthesis (`)`), followed by a space. Only the first list item's number is used as the start number of the list, if supported by the renderer, any numbers of the remaining list items are ignored.
+
+Unordered list items are prefixed with either a bullet (`•`), an asterisk (`*`) or a hyphen (`-`), followed by a space.
+
+Nested list items are indented either with spaces (at least to the leftmost column of the outer item's text) or tabs (one for each indentation level).
+
+List items may contain line breaks. New lines are not required to be indented to the depth of the list item's text, but they can for readability.
+
+If a list item contains paragraphs, they must all start at the depth of the list item's text. Any line breaks within paragraphs may start at a lower depth.
+
+Changing the character used to mark a list's items will end the list and begin a new one.
+
+</details>
 
 
 ### Block Quotes
 
-A block quote is prefixed with a vertical bar (`|`) or a right angle bracket (`>`), followed by a space.
+A block quote is prefixed with a vertical bar (`|`) followed by a space.
 
 	| Why are you quoting everything I say?
 	
@@ -129,6 +161,12 @@ A block quote is prefixed with a vertical bar (`|`) or a right angle bracket (`>
 > > Why are you quoting everything I say?
 >
 > — Anonymous
+
+<details>
+
+A block quote spanning multiple lines must use the prefix on all lines.
+ 
+</details>
 
 
 ### Verbatim Blocks
