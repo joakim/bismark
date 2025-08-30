@@ -47,12 +47,12 @@ The link's text comes before its destination.
 > [Website](https://example.com)  
 > [Email address](mailto:email@example.com)  
 
-The destination is always the last part of the whitespace delimited link. Anything before the destination is the link's text.
+The destination is always the last part of the space delimited link. Anything before the destination is the link's text.
 
 
 ### Checkboxes
 
-A checkbox is either checked `[x]` or unchecked `[ ]`.
+A checkbox is either checked `[x]` or unchecked `[ ]`, followed by a space.
 
 	Todo:
 	[x] Water the dog
@@ -69,7 +69,7 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 
 ### Headings
 
-A heading line must start with 1–3 `#` characters and a space.
+A heading line starts with 1–3 `#` characters and a space.
 
 	# Heading 1
 	## Heading 2
@@ -86,9 +86,9 @@ There are [no more levels](https://practicaltypography.com/headings.html).
 
 Paragraphs are separated by one or more blank lines.
 
-[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). In other words, opposite of what Markdown does. Editors and views are expected to use [line and word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
+[Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). In other words, opposite of what Markdown does. It's the 21st century, editors and renderers are expected to use [line and word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
 
-Inline styles can span multiple lines within the same paragraph. The end of a paragraph terminates any unterminated inline styles.
+Inline styles and links can span multiple lines within the same paragraph. The end of a paragraph terminates any unterminated inline styles.
 
 	The most dangerous thought you can have
 	as a creative person is to *think you know
@@ -103,7 +103,7 @@ Inline styles can span multiple lines within the same paragraph. The end of a pa
 
 Items are either ordered or unordered. Unordered items are prefixed with a `•` bullet or a `-` dash.
 
-Nested items must be indented, either with spaces (at least to the leftmost column of the outer item's text) or with tabs (one for each indentation level).
+Nested items are indented either with spaces (at least to the leftmost column of the outer item's text) or tabs (one for each indentation level).
 
 	1. Ordered item
 	   • Unordered bullet item
@@ -116,7 +116,7 @@ Nested items must be indented, either with spaces (at least to the leftmost colu
 
 ### Block Quotes
 
-A block quote must start with a `>` character followed by whitespace.
+A block quote starts with a `>` character followed by a space.
 
 	> Why are you quoting everything I say?
 	
