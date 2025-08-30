@@ -2,7 +2,9 @@
 
 Note: This is a draft.
 
-A Bismark editor should clearly communicate which extra features it supports beyond Basic Bismark. This could be as buttons in its toolbar or as a popover.
+A Bismark editor should clearly communicate which extra features it supports beyond Basic Bismark.
+
+This could be as buttons in its toolbar, or as a popover:
 
 > **[Basic Bismark](/readme.md)**  
 > \+ [Beautification](#beautification): Ellipsis, En-dash, Em-dash, Smart quotes  
