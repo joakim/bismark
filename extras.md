@@ -103,7 +103,7 @@ Definitions take precedence over extensions.
 
 ### Comments
 
-Comments are enclosed in square brackets that start with and optionally end with `-`.
+Comments are enclosed in square brackets that start and end with `-`.
 
 	[- An inline comment for future reference -]
 
