@@ -96,7 +96,7 @@ There are [no more levels](https://practicaltypography.com/headings.html).
 
 ### Paragraphs
 
-Paragraphs are separated by one or more blank lines, line breaks are retained.
+Paragraphs are separated by one or more blank lines, line breaks within the paragraph are retained.
 
 	The most dangerous thought you can have
 	as a creative person is to _think you know
