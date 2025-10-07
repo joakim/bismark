@@ -133,7 +133,7 @@ Bismark renderers can be extended by sub-renderers to provide additonal features
 
 Enclosing a section of text in square brackets `[…]` prefixed with the name of an extension, will cause it to be rendered by that extension.
 
-Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. Note how the image will fall back to a link in the first example. The link's text may be used as the image's alternative text.
+Which renderers are supported depend on the environment. If a renderer is not supported, the contents should be rendered as usual. Note how the image will fall back to a link in the first example. The link's text is used as the image's alternative text.
 
 Extension elements are always block elements.
 
@@ -147,7 +147,7 @@ An image within a spoiler/disclosure element:
 
 > <details>
 > <summary>Spoiler</summary>
->   <img title="A happy little quokka holding a twig" src="https://i.imgur.com/KLsmqqR.jpeg"/>
+>   <img alt="A happy little quokka holding a twig" src="https://i.imgur.com/KLsmqqR.jpeg"/>
 > </details>
 
 Tables, using Markdown's table syntax:
