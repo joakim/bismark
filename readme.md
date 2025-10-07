@@ -98,13 +98,15 @@ There are [no more levels](https://practicaltypography.com/headings.html).
 
 Paragraphs are separated by one or more blank lines, line breaks within paragraphs are retained.
 
-	The most dangerous thought you can have
-	as a creative person is to _think you know
-	what you're doing_.
+	To see a world in a grain of sand 
+	And a heaven in a wild flower 
+	Hold infinity in the palm of your hand 
+	And eternity in an hour
 
-> The most dangerous thought you can have  
-> as a creative person is to *think you know  
-> what you're doing*.
+> To see a world in a grain of sand  
+> And a heaven in a wild flower  
+> Hold infinity in the palm of your hand  
+> And eternity in an hour
 
 <details>
 
