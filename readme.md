@@ -79,21 +79,6 @@ A checkbox is either checked `[x]` or unchecked `[ ]`, followed by a space.
 
 ## Block Elements
 
-### Headings
-
-A heading line starts with 1–3 hash characters (`#`) and a space.
-
-	# Heading 1
-	## Heading 2
-	### Heading 3
-
-> # Heading 1
-> ## Heading 2
-> ### Heading 3
-
-There are [no more levels](https://practicaltypography.com/headings.html).
-
-
 ### Paragraphs
 
 Paragraphs are separated by one or more blank lines, line breaks within paragraphs are retained.
@@ -117,6 +102,21 @@ Inline styles and links can span multiple lines within a paragraph.
 Leading and trailing whitespace may be ignored by renderers.
 
 </details>
+
+
+### Headings
+
+A heading line starts with 1–3 hash characters (`#`) and a space.
+
+	# Heading 1
+	## Heading 2
+	### Heading 3
+
+> # Heading 1
+> ## Heading 2
+> ### Heading 3
+
+There are [no more levels](https://practicaltypography.com/headings.html).
 
 
 ### Lists
