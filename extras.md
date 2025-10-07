@@ -9,7 +9,7 @@ This could be as buttons in its toolbar, or as a popover:
 > **[Basic Bismark](/readme.md)**  
 > \+ [Beautification](#beautification): Ellipsis, En-dash, Em-dash, Smart quotes  
 > \+ [Inline Styles](#inline-styles): Highlight, Superscript, Subscript  
-> \+ [References](#references): Citations, Notes, Links  
+> \+ [References](#definitions-and-references): Citations, Notes, Links  
 > \+ [Comments](#comments)  
 > \+ [Extensions](#extensions): Image, Table, TeX  
 > \+ [Syntax Highlighting](#syntax-highlighting): Clojure, JavaScript, Python  
@@ -51,54 +51,62 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 > <sub>subscript</sub>
 
 
-### References
-
-A reference is an inline element whose text, enclosed in square brackets `[…]`, matches a [definition](#definitions).
-
-	According to [Wikipedia]<>'s article on [wiki en Structured Query Language], [?SQL] was originally called SEQUEL.[^1][*a]
-
-> According to <a href="https://www.wikipedia.org/">Wikipedia</a>'s article on [Structured Query Language](https://en.wikipedia.org/wiki/Structured%20Query%20Language), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
-
+### Definitions and References
 
 #### Definitions
 
 Definitions are used for abbreviations, citations, notes, snippets and links.
 
-A definition is a line with the syntax `[key …]: value`. It may be [referenced](#references) anywhere in the source, except in definitions, using `[key …]`.
+A definition is a line with the syntax `[key …]: value`. It may be [referenced](#references) anywhere in the source (except in definitions) using `[key …]`.
 
 If the `key` starts with a `?`, it's an abbreviation.  
 If the `key` starts with a `^`, it's a citation.  
 If the `key` starts with a `*`, it's a note.  
-Otherwise, it's a snippet or a link.  
+Otherwise, it's a snippet.
 
-If the snippet's key is followed by a space and one or more variables, specified in curly brackets `{…}` and separated by space, it's a template. The last variable consumes any remaining text of the reference, including whitespace, until `]` is encountered. Captured variables are referenced within the template using curly brackets `{…}`.
+A snippet's key may be followed by a space and one or more variables, specified in curly brackets `{…}` and separated by space, making it a template snippet. The last variable consumes any remaining text of the reference, including whitespace, until `]` is encountered. Captured variables may be referenced within the template using curly brackets `{…}`.
 
-Links may be constructed from definitions, where the reference's text matches a definition and is immediately followed by `<>`. The link's text may be specified within the angle brackets, otherwise the reference's text is used.
-
-	[Wikipedia]<>
-    [Twitter]<X>
-
-> [Wikipedia](https://wikipedia.org/)  
-> [X](https://x.com/)
-
-Links can also be composed using snippets.
-
-    <X [twitter]>
-
-> [X](https://x.com/)
+A snippet may also be [referenced](#references) as a link.
 
 Definitions are case insensitive and cannot start with `-` or contain `[` or `]`. `[x]` and `[ ]` are reserved for checkboxes.
 
 `[*]` is a valid note reference, as is `[**]`, `[***]`, etc.
 
-	[?SQL]: Structured Query Language
+	[?sql]: Structured Query Language
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
 	[wiki {lang} {title}]: <{title} https://{lang}.wikipedia.org/wiki/{title}>
     [wikipedia]: https://www.wikipedia.org/
 	[twitter]: https://x.com/
 
-Definitions take precedence over extensions.
+Definitions take precedence over [extensions](#extensions).
+
+
+#### References
+
+A reference is an inline element whose text, enclosed in square brackets `[…]`, matches a [definition](#definitions) (case insensitive).
+
+	According to [Wikipedia]<>'s article on [wiki en Structured Query Language], [?SQL] was originally called SEQUEL.[^1][*a]
+
+> According to <a href="https://www.wikipedia.org/">Wikipedia</a>'s article on [Structured Query Language](https://en.wikipedia.org/wiki/Structured%20Query%20Language), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
+
+Links may be composed by hand with snippets.
+
+    <X [twitter]>
+
+> [X](https://x.com/)
+
+Or composed in a template snippet.
+
+	[wiki en Bismark]
+
+> [Bismark](https://en.wikipedia.org/wiki/Bismark)
+
+A definition may also be rendered as a link by appending `<>` to the reference. The reference's text is used as the link's text as is.
+
+	[Wikipedia]<>
+
+> [Wikipedia](https://wikipedia.org/)  
 
 
 ### Comments
