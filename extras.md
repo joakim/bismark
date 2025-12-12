@@ -13,7 +13,6 @@ This could be as buttons in its toolbar, or as a popover:
 > \+ [Comments](#comments)  
 > \+ [Extensions](#extensions): Image, Table, TeX  
 > \+ [Syntax Highlighting](#syntax-highlighting): Clojure, JavaScript, Python  
-> \+ [Inline Code](#inline-code): JavaScript  
 
 <sup>Some examples on this page require certain Markdown extensions to render correctly.</sup>
 
@@ -190,25 +189,6 @@ Markdown inside Bismark:
 > ```rebol
 > print "Hello, world!"
 > ```
-
-
-### Inline Code
-
-Code enclosed in double curly braces `{{…}}` will be evaluated inline when rendered.
-
-	The answer is... {{ 2 * 3 * 7 }}!
-	
-	Last updated: {{ Temporal.Now.plainDateTimeISO().toLocaleString('se') }}
-
-> The answer is… 42!
-> 
-> Last updated: 2025-06-20 16:16:59
-
-Only one language may be supported at a time, to be specified by the renderer. While this is not very portable, it can be a powerful feature within a particular environment.
-
-Because `{{` and `}}` may occur in programming languages, parsers must track nested `{{…}}` to reach the closing `}}` of the inline code element.
-
----
 
 [^1]: D.D. Chamberlin, [Oral history interview with Donald D. Chamberlin](https://hdl.handle.net/11299/107215) (Charles Babbage Institute, 2001).  
 [^a]: In fact, many still pronounce it "sequel".
