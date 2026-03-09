@@ -1,14 +1,12 @@
-# EditorConfig is awesome: https://EditorConfig.org
-
 root = true
 
 [*]
 charset = utf-8
 indent_style = tab
-indent_size = 4
+indent_size = 2
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{md,sbm}]
+[*.md]
 trim_trailing_whitespace = false
