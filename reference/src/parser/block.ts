@@ -51,22 +51,6 @@ export abstract class BismarkBlocks extends EventEmitter {
 			this.output('header', { raw, text: line.slice(level), level })
 		}
 
-		// List item (or a dinkus)
-		else if (listSymbols.has(<ListType>line[0]) && line[1] === ' ') {
-			if (isDinkus(line)) {
-				this.output('dinkus', { raw, text: line })
-			} else {
-				let listType = <ListType>line[0]
-
-				// A sudden change of list type creates a new list
-				if (this.previous.type === 'listItem' && this.previous.listType !== listType) {
-					this.output('listClose', { listType }, false)
-				}
-
-				this.output('listItem', { raw, text: line.slice(2), listType })
-			}
-		}
-
 		// Quote line
 		else if (line[0] == '|') {
 			this.output('quoteLine', { raw, text: line.slice(1) })
@@ -89,6 +73,18 @@ export abstract class BismarkBlocks extends EventEmitter {
 		// Dinkus
 		else if (line.length > 0 && isDinkus(line)) {
 			this.output('dinkus', { raw, text: line })
+		}
+
+		// List item (must come after the Dinkus clause, as they share symbols)
+		else if (listSymbols.has(<ListType>line[0]) && line[1] === ' ') {
+			let listType = <ListType>line[0]
+
+			// A change of type closes the list, triggering a transition to a new list
+			if (this.previous.type === 'listItem' && this.previous.listType !== listType) {
+				this.output('listClose', { listType }, false)
+			}
+
+			this.output('listItem', { raw, text: line.slice(2), listType })
 		}
 
 		// Text line
@@ -134,7 +130,7 @@ export abstract class BismarkBlocks extends EventEmitter {
 			}
 		}
 
-		// Call implementation's listener and handler functions
+		// Call the implementation's listener and handler functions
 		this.emit(type, current, previous)
 		this[type](current)
 
