@@ -1,5 +1,5 @@
 /**
- * Bismark Micron.
+ * Bismark to Micron.
  */
 
 import type { BismarkBlockHandlers } from '../types'
