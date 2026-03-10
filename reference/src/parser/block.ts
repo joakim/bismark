@@ -44,7 +44,8 @@ export abstract class BismarkBlocks extends EventEmitter {
 
 		// Quote line
 		else if (line[0] == '|') {
-			this.output('quoteLine', { raw, text: line.slice(1) })
+			let depth = countLeading(line, '|')
+			this.output('quoteLine', { raw, text: line.slice(depth), depth })
 		}
 
 		// Verbatim open/close
