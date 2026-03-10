@@ -34,6 +34,8 @@ Verbatim text may be enclosed by multiple consecutive backtick characters (``` `
 
 By convention, verbatim text is rendered in a monospaced font.
 
+Inline styles can span multiple lines.
+
 </details>
 
 
@@ -58,6 +60,8 @@ The link's text comes before its destination.
 <details>
 
 The destination is always the last part of the space delimited link. Anything before the destination is the link's text.
+
+A link can span multiple lines.
 
 </details>
 
@@ -90,8 +94,6 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 <details>
 
 [Line breaks](https://practicaltypography.com/hard-line-breaks.html) within paragraphs are retained unless [escaped](#escaping). In other words, the opposite of what Markdown does. It's the 21st century, editors and renderers can be expected to use [line and word wrap](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap).
-
-Inline styles and links can span multiple lines within a paragraph.
 
 Leading and trailing whitespace may be ignored by renderers.
 
@@ -173,7 +175,7 @@ A block quote spanning multiple lines must use the prefix on all lines.
 
 ### Verbatim Blocks
 
-A verbatim block is opened and closed with a line starting with three backticks (` ``` `).
+A verbatim block is opened with a line starting with at least three backticks (` ``` `) and closed with a line starting with the same number of backticks.
 
 	```
 	¯\_(ツ)_/¯
@@ -183,6 +185,13 @@ A verbatim block is opened and closed with a line starting with three backticks 
 > ¯\_(ツ)_/¯
 > ```
 
+<details>
+
+The adjustable number of backticks allows the verbatim block to contain lines starting with fewer or more backticks.
+
+The backticks may be followed by a specifier, which may be used by renderers.
+ 
+</details>
 
 ### Thematic Breaks
 
