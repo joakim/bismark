@@ -37,9 +37,9 @@ export type BismarkBlockHandlers = {
 	quoteOpen: BlockDetails
 	quoteLine: BlockDetails & { text: string }
 	quoteClose: BlockDetails
-	verbatimOpen: BlockDetails
-	verbatimLine: BlockDetails & { text: string }
-	verbatimClose: BlockDetails
+	verbatimOpen: BlockDetails & { text: string; depth: number }
+	verbatimLine: BlockDetails & { text: string; depth: number }
+	verbatimClose: BlockDetails & { text: string; depth: number }
 	listOpen: BlockDetails & { listType: ListType }
 	listItem: BlockDetails & { text: string; listType: ListType }
 	listClose: BlockDetails & { listType: ListType }

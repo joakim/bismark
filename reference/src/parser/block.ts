@@ -12,12 +12,6 @@ const listSymbols = new Set<ListType>(['•', '*', '-'])
 /** The symbols that a dinkus may consist of. */
 const dinkusSymbols = new Set([...listSymbols, ' '])
 
-/** Checks whether a line only contains dinkus symbols and therefore must be a dinkus. */
-function isDinkus(line: string) {
-	for (let char of line) if (!dinkusSymbols.has(char)) return false
-	return true
-}
-
 /** Bismark block parser. */
 export abstract class BismarkBlocks extends EventEmitter {
 	out: typeof process.stdout
@@ -58,16 +52,25 @@ export abstract class BismarkBlocks extends EventEmitter {
 
 		// Verbatim open/close
 		else if (line.startsWith('```')) {
-			let type: 'verbatimOpen' | 'verbatimClose' =
-				this.previous.type === 'verbatimOpen' || this.previous.type === 'verbatimLine'
-					? 'verbatimClose'
-					: 'verbatimOpen'
-			this.output(type)
+			let depth = countLeading(line, '`')
+
+			if (this.previous.type === 'verbatimLine' || this.previous.type === 'verbatimOpen') {
+				if (this.previous.depth === depth) {
+					// Close the verbatim block if the depth matches the opening element
+					this.output('verbatimClose', { raw, text: line.slice(depth), depth })
+				} else {
+					// If the depth doesn't match, it's a verbatim line
+					this.output('verbatimLine', { raw, text: line, depth: this.previous.depth })
+				}
+			} else {
+				this.output('verbatimOpen', { raw, text: line.slice(depth), depth })
+			}
 		}
 
 		// Verbatim line
-		else if (this.previous.type === 'verbatimOpen' || this.previous.type === 'verbatimLine') {
-			this.output('verbatimLine', { raw, text: line })
+		else if (this.previous.type === 'verbatimLine' || this.previous.type === 'verbatimOpen') {
+			// Carry the depth of the opening element so the closing element can match
+			this.output('verbatimLine', { raw, text: line, depth: this.previous.depth })
 		}
 
 		// Dinkus
@@ -153,4 +156,17 @@ export abstract class BismarkBlocks extends EventEmitter {
 	listOpen(current: BlockDetails) {}
 	listClose(current: BlockDetails) {}
 	dinkus(current: BlockDetails) {}
+}
+
+/** Checks whether a line only has dinkies and therefore must be a dinkus. */
+function isDinkus(line: string) {
+	for (let char of line) if (!dinkusSymbols.has(char)) return false
+	return true
+}
+
+/** Counts the number of matching characters at the start of a string. */
+function countLeading(line: string, char: string) {
+	let i = 0
+	for (; i < line.length; i++) if (line[i] !== char) break
+	return i
 }
