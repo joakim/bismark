@@ -20,12 +20,23 @@ Requires the [Bun](https://bun.com/) runtime (for now).
 
 ## Roadmap
 
-- [x] Block elements (Level 0)
-- [x] HTML target
-- [x] Markdown target
-- [x] Micron target
+- [ ] Block elements (Level 0)
+	- [x] Header
+	- [x] Paragraph
+	- [x] Quote
+	- [x] Verbatim
+	- [x] Lists
+		- [x] Unordered
+		- [ ] Ordered
+		- [ ] Multiline items
+	- [x] Dinkus
+	- [ ] Nested elements
+- [ ] Common targets
+	- [x] HTML
+	- [x] Markdown
+	- [x] Micron
+	- [ ] Djot
 - [ ] Test suite
-- [ ] Nested block elements (Level 0)
 - [ ] Inline elements (Level 1)
 	- [ ] Styling
 		- [ ] Bold
@@ -33,6 +44,7 @@ Requires the [Bun](https://bun.com/) runtime (for now).
 		- [ ] Verbatim
 	- [ ] Links
 	- [ ] Checkboxes
+	- [ ] Beautification
 - [ ] Bracket elements (Level 2)
 	- [ ] Comments
 	- [ ] Definitions and references
@@ -40,7 +52,6 @@ Requires the [Bun](https://bun.com/) runtime (for now).
 		- [ ] Spoilers
 		- [ ] Images
 		- [ ] Tables
-- [ ] Beautification
 
 ---
 
