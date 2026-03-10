@@ -8,7 +8,7 @@ Intended to be easy to understand. So simple that it's almost embarrasing.
 
 0. [Block elements](./src/parser/block.ts)
 1. Inline elements
-2. Extras
+2. Bracket elements
 
 ### Targets
 
@@ -27,15 +27,14 @@ Requires the [Bun](https://bun.com/) runtime (for now).
 - [ ] Test suite
 - [ ] Nested block elements (Level 0)
 - [ ] Inline elements (Level 1)
-- [ ] Extras (Level 2)
-	- [ ] Beautification
-	- [ ] Brackets
-		- [ ] Comments
-		- [ ] References
-		- [ ] Extensions
-			- [ ] Spoilers
-			- [ ] Images
-			- [ ] Tables
+- [ ] Bracket elements (Level 2)
+	- [ ] Comments
+	- [ ] Definitions and references
+	- [ ] Extensions
+		- [ ] Spoilers
+		- [ ] Images
+		- [ ] Tables
+- [ ] Beautification
 
 ---
 
