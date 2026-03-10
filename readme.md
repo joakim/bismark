@@ -81,17 +81,11 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 
 ### Paragraphs
 
-Paragraphs are separated by one or more blank lines, line breaks within paragraphs are retained.
+	Paragraphs are separated by one or more blank lines,
+	line breaks within paragraphs are retained.
 
-	To see a world in a grain of sand 
-	And a heaven in a wild flower 
-	Hold infinity in the palm of your hand 
-	And eternity in an hour
-
-> To see a world in a grain of sand  
-> And a heaven in a wild flower  
-> Hold infinity in the palm of your hand  
-> And eternity in an hour
+> Paragraphs are separated by one or more blank lines,  
+> line breaks within paragraphs are retained.
 
 <details>
 
@@ -156,13 +150,19 @@ Changing the character used to mark a list's items will end the list and begin a
 
 A block quote is prefixed with a vertical bar (`|`) followed by a space.
 
-	| Why are you quoting everything I say?
-	
-	— Anonymous
+	| To see a world in a grain of sand 
+	| And a heaven in a wild flower 
+	| Hold infinity in the palm of your hand 
+	| And eternity in an hour
 
-> > Why are you quoting everything I say?
+	— William Blake
+
+> > To see a world in a grain of sand  
+> > And a heaven in a wild flower  
+> > Hold infinity in the palm of your hand  
+> > And eternity in an hour
 >
-> — Anonymous
+> — William Blake
 
 <details>
 

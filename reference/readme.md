@@ -1,4 +1,4 @@
-# Bismark Reference Implementation (WIP)
+# Bismark Reference Implementation
 
 Intended to be easy to understand. So simple that it's almost embarrasing.
 
@@ -12,11 +12,27 @@ Intended to be easy to understand. So simple that it's almost embarrasing.
 
 ### Targets
 
-- [HTML](./src/targets/html.ts)
-- [Markdown](./src/targets/markdown.ts)
-- [Micron](./src/targets/micron.ts)
+- [HTML](./src/targets/html.ts) (block level)
+- [Markdown](./src/targets/markdown.ts) (block level)
+- [Micron](./src/targets/micron.ts) (block level)
 
 Requires the [Bun](https://bun.com/) runtime (for now).
+
+## Roadmap
+
+- [x] Block elements (Level 0)
+- [x] HTML target
+- [x] Markdown target
+- [x] Micron target
+- [ ] Tests
+- [ ] Nested block elements (Level 0)
+- [ ] Inline elements (Level 1)
+- [ ] Extras (Level 2)
+	- [ ] Beautification
+	- [ ] Brackets
+		- [ ] Comments
+		- [ ] References
+		- [ ] Extensions
 
 ---
 
