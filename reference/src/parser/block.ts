@@ -33,7 +33,7 @@ export abstract class BismarkBlocks extends EventEmitter {
 	parseLine(raw: string, number: number) {
 		let line = raw.trim()
 
-		this.emit('line', raw)
+		this.emit('line', raw, number)
 
 		// Header
 		if (line[0] == '#') {
