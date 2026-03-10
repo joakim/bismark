@@ -1,5 +1,5 @@
 /**
- * Bismark level 1: block elements.
+ * Bismark level 0: block elements.
  */
 
 import type { BlockDetails, BlockType, ListType } from '../types'

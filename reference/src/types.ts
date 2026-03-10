@@ -31,17 +31,17 @@ export type ListType = '•' | '*' | '-'
 export type BismarkBlockHandlers = {
 	blank: BlockDetails
 	header: BlockDetails & { text: string; level: number }
-	paragraphLine: BlockDetails & { text: string; continuation: boolean }
 	paragraphOpen: BlockDetails
+	paragraphLine: BlockDetails & { text: string; continuation: boolean }
 	paragraphClose: BlockDetails
-	quoteLine: BlockDetails & { text: string }
 	quoteOpen: BlockDetails
+	quoteLine: BlockDetails & { text: string }
 	quoteClose: BlockDetails
-	verbatimLine: BlockDetails & { text: string }
 	verbatimOpen: BlockDetails
+	verbatimLine: BlockDetails & { text: string }
 	verbatimClose: BlockDetails
-	listItem: BlockDetails & { text: string; listType: ListType }
 	listOpen: BlockDetails & { listType: ListType }
+	listItem: BlockDetails & { text: string; listType: ListType }
 	listClose: BlockDetails & { listType: ListType }
 	dinkus: BlockDetails & { text: string }
 }

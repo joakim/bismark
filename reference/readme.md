@@ -4,8 +4,8 @@ Intended to be easy to understand. So simple that it's almost embarrasing.
 
 Parser levels:
 
-0. Inline elements
-1. [Block elements](./src/parser/block.ts)
+0. [Block elements](./src/parser/block.ts)
+1. Inline elements
 2. Extras
 
 Requires the [Bun](https://bun.com/) runtime (for now).
