@@ -24,7 +24,7 @@ Requires the [Bun](https://bun.com/) runtime (for now).
 - [x] HTML target
 - [x] Markdown target
 - [x] Micron target
-- [ ] Tests
+- [ ] Test suite
 - [ ] Nested block elements (Level 0)
 - [ ] Inline elements (Level 1)
 - [ ] Extras (Level 2)
@@ -33,6 +33,9 @@ Requires the [Bun](https://bun.com/) runtime (for now).
 		- [ ] Comments
 		- [ ] References
 		- [ ] Extensions
+			- [ ] Spoilers
+			- [ ] Images
+			- [ ] Tables
 
 ---
 
