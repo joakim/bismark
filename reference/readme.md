@@ -27,6 +27,12 @@ Requires the [Bun](https://bun.com/) runtime (for now).
 - [ ] Test suite
 - [ ] Nested block elements (Level 0)
 - [ ] Inline elements (Level 1)
+	- [ ] Styling
+		- [ ] Bold
+		- [ ] Italic
+		- [ ] Verbatim
+	- [ ] Links
+	- [ ] Checkboxes
 - [ ] Bracket elements (Level 2)
 	- [ ] Comments
 	- [ ] Definitions and references
