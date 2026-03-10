@@ -100,11 +100,11 @@ Leading and trailing whitespace may be ignored by renderers.
 
 ### Headings
 
-A heading line starts with 1–3 `>` characters.
+A heading line starts with 1–3 `#` characters.
 
-	> Heading 1
-	>> Heading 2
-	>>> Heading 3
+	# Heading 1
+	## Heading 2
+	### Heading 3
 
 > # Heading 1
 > ## Heading 2

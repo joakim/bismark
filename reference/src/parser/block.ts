@@ -36,13 +36,10 @@ export abstract class BismarkBlocks extends EventEmitter {
 		this.emit('line', raw)
 
 		// Header
-		if (line[0] == '>') {
-			let level = 1
-			if (line[1] == '>') {
-				level = 2
-				if (line[2] == '>') level = 3
-			}
-			this.output('header', { raw, text: line.slice(level), level })
+		if (line[0] == '#') {
+			let depth = countLeading(line, '#')
+			let level = Math.min(depth, 3) // capped to 3 levels
+			this.output('header', { raw, text: line.slice(depth), level })
 		}
 
 		// Quote line
