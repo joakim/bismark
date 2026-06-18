@@ -2,18 +2,6 @@
 
 Note: This is a draft.
 
-A Bismark editor should clearly communicate which extra features it supports beyond Basic Bismark.
-
-This could be as buttons in its toolbar, or as a popover:
-
-> **[Basic Bismark](/readme.md)**  
-> \+ [Beautification](#beautification): Ellipsis, En-dash, Em-dash, Smart quotes  
-> \+ [Inline Styles](#inline-styles): Highlight, Superscript, Subscript  
-> \+ [References](#definitions-and-references): Citations, Notes, Links  
-> \+ [Comments](#comments)  
-> \+ [Extensions](#extensions): Image, Table, TeX  
-> \+ [Syntax Highlighting](#syntax-highlighting): Clojure, JavaScript, Python  
-
 <sup>Some examples on this page require certain Markdown extensions to render correctly.</sup>
 
 ---
