@@ -44,26 +44,26 @@ Inline [styles](/readme.md#styling) (bold, italic and verbatim) may be extended 
 
 Definitions are used for abbreviations, citations, notes, snippets and links.
 
-A definition is a line with the syntax `[key …]: value`. It may be [referenced](#references) anywhere in the source (except in definitions) using `[key …]`.
+A definition is a line with the syntax `[key]: value`. It may be [referenced](#references) anywhere in the source (except in definitions) using `[key]`.
+
+Keys are case insensitive, cannot start with `-` or `#` and cannot contain `:`, `[` or `]`.
 
 If the `key` starts with a `?`, it's an abbreviation.  
 If the `key` starts with a `^`, it's a citation.  
 If the `key` starts with a `*`, it's a note.  
 Otherwise, it's a snippet.
 
-A snippet's key may be followed by a space and one or more variables, specified in curly brackets `{…}` and separated by space, making it a template snippet. The last variable consumes any remaining text of the reference, including whitespace, until `]` is encountered. Captured variables may be referenced within the template using curly brackets `{…}`.
+A snippet may contain named variables in curly brackets (`{name}`), making it a template snippet. Variable names are case insensitive and cannot contain `:`, `[`, `]` or space.
 
-A snippet may also be [referenced](#references) as a link.
-
-Definitions are case insensitive and cannot start with `-` or contain `[` or `]`. `[x]` and `[ ]` are reserved for checkboxes.
+`[x]` and `[ ]` are reserved for checkboxes.
 
 `[*]` is a valid note reference, as is `[**]`, `[***]`, etc.
 
 	[?sql]: Structured Query Language
 	[^1]: D.D. Chamberlin, <Oral history interview with Donald D. Chamberlin https://hdl.handle.net/11299/107215> (Charles Babbage Institute, 2001).
 	[*a]: In fact, many still pronounce it "sequel".
-	[wiki {lang} {title}]: <{title} https://{lang}.wikipedia.org/wiki/{title}>
-    [wikipedia]: https://www.wikipedia.org/
+	[wiki]: <{title} https://{lang}.wikipedia.org/wiki/{title}>
+	[wikipedia]: https://www.wikipedia.org/
 	[twitter]: https://x.com/
 
 Definitions take precedence over [extensions](#extensions).
@@ -71,29 +71,39 @@ Definitions take precedence over [extensions](#extensions).
 
 #### References
 
-A reference is an inline element whose text, enclosed in square brackets `[…]`, matches a [definition](#definitions) (case insensitive).
+A reference is an inline element whose text, enclosed in square brackets `[…]`, matches a [definition](#definitions)'s `key` (case insensitive).
 
-	According to [Wikipedia]<>'s article on [wiki en Structured Query Language], [?SQL] was originally called SEQUEL.[^1][*a]
+If the definition is a template snippet, the `key` may be followed by a list of `name:value` pairs separated by space. If a `value` contains spaces, it must be enclosed in quotation marks.
+
+	According to [Wikipedia]<>'s article on [wiki lang:en title:"Structured Query Language"], [?SQL] was originally called SEQUEL.[^1][*a]
 
 > According to <a href="https://www.wikipedia.org/">Wikipedia</a>'s article on [Structured Query Language](https://en.wikipedia.org/wiki/Structured%20Query%20Language), <abbr title="Structured Query Language">SQL</abbr> was originally called SEQUEL.[^1][^a]
 
-Links may be composed by hand with snippets.
+
+#### Links
+
+Links may be composed using snippets.
 
     <X [twitter]>
 
 > [X](https://x.com/)
 
-Or composed in a template snippet.
-
-	[wiki en Bismark]
-
-> [Bismark](https://en.wikipedia.org/wiki/Bismark)
-
-A definition may also be rendered as a link by appending `<>` to the reference. The reference's text is used as the link's text as is.
+A definition may be rendered as a link by appending `<>` to the reference. The reference must match the definition's `key` (case insensitive) and will be the link's text. The definition's `value` will be the links's destination.
 
 	[Wikipedia]<>
 
-> [Wikipedia](https://wikipedia.org/)  
+> [Wikipedia](https://wikipedia.org/)
+
+
+##### Anchors
+
+Anchor references may be used to link to headings in the same document. If `<>` is appended to an anchor reference, it will be rendered as a link with the heading as the link's text.
+
+	<see here [#Definitions and References]>  
+	[#Definitions and References]<>
+
+> [see here](#definitions-and-references)  
+> [Definitions and References](#definitions-and-references)
 
 
 ### Comments
