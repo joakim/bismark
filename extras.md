@@ -157,7 +157,7 @@ An image within a spoiler/disclosure element:
 >   <img alt="A happy little quokka holding a twig" src="https://i.imgur.com/KLsmqqR.jpeg"/>
 > </details>
 
-Tables, using Markdown's table syntax:
+Tables, using Djot/Markdown [pipe table](https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html#pipe-table) syntax:
 
 	[table
 	| Bismark    | Markdown                |
@@ -171,7 +171,7 @@ Tables, using Markdown's table syntax:
 > | `*bold*`   | `**bold**` / `__bold__` |
 > | `_italic_` | `*italic*` / `_italic_` |
 
-Math formulas, assuming the environment supports TeX:
+Math formulas, assuming the environment supports [TeX](https://en.wikipedia.org/wiki/TeX):
 
 	[tex \dfrac{\partial y}{\partial x} = x ]
 
@@ -188,7 +188,7 @@ Markdown inside Bismark:
 
 ### Syntax Highlighting
 
-[Verbatim blocks](/readme.md#verbatim-blocks) may be syntax highlighted by specifying a supported language.
+[Verbatim blocks](/readme.md#verbatim-blocks) may be syntax highlighted by specifying a supported language as the first word after the opening ` ``` `.
 
 	``` rebol
 	print "Hello, world!"
