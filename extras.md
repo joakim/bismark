@@ -124,6 +124,16 @@ Uses cases include:
 - Exclusion from output
 
 
+### Attributes
+
+Equivalent to Djot's [inline](https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html#inline-attributes) and [block](https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html#block-attributes) attributes, except swapping `:` and `=`, not having comments and quotes only being required if an attribute's `value` contains spaces.
+
+	An attribute on _emphasized text_{#foo .bar .baz key:"my value"}
+
+	{source:Iliad}
+	Sing, muse, of the wrath of Achilles
+
+
 ### Extensions
 
 Bismark renderers can be extended by sub-renderers to provide additonal features.
