@@ -13,7 +13,7 @@ It is still subject to change. Feedback is always welcome.
 
 --- 
 
-## Inline Elements
+## Inline elements
 
 ### Styling
 
@@ -82,7 +82,7 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 <sub>This example requires a Markdown extension to render correctly.</sub>
 
 
-## Block Elements
+## Block elements
 
 ### Title
 
@@ -162,7 +162,7 @@ Changing the character used to mark a list's items will end the list and begin a
 </details>
 
 
-### Block Quotes
+### Block quotes
 
 A block quote is prefixed with a vertical bar (`|`) followed by a space.
 
@@ -187,7 +187,7 @@ A block quote spanning multiple lines must use the prefix on all lines.
 </details>
 
 
-### Verbatim Blocks
+### Verbatim blocks
 
 A verbatim block is opened with a line starting with at least three backticks (` ``` `) and closed with a line starting with the same number of backticks.
 
@@ -207,7 +207,8 @@ The backticks may be followed by a specifier, which may be used by renderers.
  
 </details>
 
-### Thematic Breaks
+
+### Thematic breaks
 
 A line consisting of at least three hyphen (`-`) or asterisk (`*`) characters, in any combination, with any whitespace characters ignored, should be rendered as a thematic break. For example as a [dinkus](https://en.wikipedia.org/wiki/Dinkus) or a horizontal line.
 
