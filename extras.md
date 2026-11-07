@@ -188,7 +188,7 @@ Markdown inside Bismark:
 
 ### Syntax Highlighting
 
-[Verbatim blocks](/readme.md#verbatim-blocks) may be syntax highlighted by specifying a supported language as the first word after the opening ` ``` `.
+[Verbatim blocks](/readme.md#verbatim-blocks) may be syntax highlighted by specifying a supported language after the opening ` ``` `.
 
 	``` rebol
 	print "Hello, world!"
