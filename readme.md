@@ -1,14 +1,14 @@
 # Bismark
 
-A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language), suitable for both shorter and longer texts.
+A [lightweight markup language](https://en.wikipedia.org/wiki/Lightweight_markup_language) that is:
 
-- Simple
+- Similar to Markdown
 - Typographically sound
 - [Extensible](/extras.md)
 
 Bismark is output format agnostic, and is intended to be relatively easy to parse.
 
-It is still in flux and is subject to change. Feedback is always welcome.
+It is still subject to change. Feedback is always welcome.
 
 --- 
 
