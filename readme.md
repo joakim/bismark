@@ -84,6 +84,34 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 
 ## Block Elements
 
+### Title
+
+A title line is followed by a line of one or more `=` characters, [Setext](https://en.wikipedia.org/wiki/Setext) style.
+
+	Title
+	=====
+
+>	Title
+>	=====
+
+A document should have only one title.
+
+
+### Headings
+
+A heading line starts with 1–3 `#` characters.
+
+	# Heading 1
+	## Heading 2
+	### Heading 3
+
+> ## Heading 1
+> ### Heading 2
+> #### Heading 3
+
+There are [no more levels](https://practicaltypography.com/headings.html).
+
+
 ### Paragraphs
 
 	Paragraphs are separated by one or more blank lines,
@@ -99,34 +127,6 @@ A checkbox is either checked `[x]` or unchecked `[ ]`.
 Leading and trailing whitespace may be ignored by renderers.
 
 </details>
-
-
-### Title
-
-A title line is followed by a line of one or more `=` characters, [Setext](https://en.wikipedia.org/wiki/Setext) style.
-
-	Title
-	=====
-
-
->	Title
->	=====
-
-A document should have only one title.
-
-### Headings
-
-A heading line starts with 1–3 `#` characters.
-
-	# Heading 1
-	## Heading 2
-	### Heading 3
-
-> ## Heading 1
-> ### Heading 2
-> #### Heading 3
-
-There are [no more levels](https://practicaltypography.com/headings.html).
 
 
 ### Lists
